@@ -1,0 +1,3580 @@
+wordCutOff = 0
+featCutOff = 0
+charCutOff = 0
+initRange = 0.01
+maxIter = 200
+batchSize = 1
+adaEps = 1e-06
+adaAlpha = 0.01
+regParameter = 1e-08
+dropProb = 0
+wordHiddenSize = 100
+charHiddenSize = 100
+rnnHiddenSize = 100
+hiddenSize1 = 50
+hiddenSize2 = 60
+hiddenSize3 = 70
+hiddenSize4 = 80
+wordEmbSize = 50
+wordcontext = 2
+charEmbSize = 30
+charcontext = 2
+wordEmbFineTune = 1
+charEmbFineTune = 1
+verboseIter = 100
+saveItermediate = 1
+train = 0
+maxInstance = -1
+outBest = OUTnodrop
+rnnFunc = 0
+lstmFunc = 0
+cnnFunc = 0
+relu = 0
+hislinear = 1
+removePool = 0
+removeCharPool = 0
+seg = 1
+
+instance num: 631
+
+instance num: 600
+
+instance num: 126
+Creating Alphabet...
+100 200 300 400 500 600 631 
+Label num: 2
+Total feature num: 1359
+Remain feature num: 1359
+100 200 300 400 500 600 631 
+100 200 300 400 500 600 600 
+100 126 
+##### Iteration 0
+current: 100, total block: 631
+Cost = 0.619935, Tag Correct(%) = 0.61
+current: 200, total block: 631
+Cost = 0.650501, Tag Correct(%) = 0.69
+current: 300, total block: 631
+Cost = 0.68975, Tag Correct(%) = 0.753333
+current: 400, total block: 631
+Cost = 0.0828712, Tag Correct(%) = 0.7825
+current: 500, total block: 631
+Cost = 0.0224962, Tag Correct(%) = 0.796
+current: 600, total block: 631
+Cost = 0.132279, Tag Correct(%) = 0.816667
+dev:
+Accuracy:	P=486/600=0.81
+test:
+Accuracy:	P=71/126=0.563492
+Exceeds best previous performance of 0. Saving model file..
+##### Iteration 1
+current: 69, total block: 631
+Cost = 0.0415102, Tag Correct(%) = 1
+current: 169, total block: 631
+Cost = 0.108907, Tag Correct(%) = 0.988166
+current: 269, total block: 631
+Cost = 0.141265, Tag Correct(%) = 0.98513
+current: 369, total block: 631
+Cost = 0.032684, Tag Correct(%) = 0.98374
+current: 469, total block: 631
+Cost = 0.0217072, Tag Correct(%) = 0.985075
+current: 569, total block: 631
+Cost = 0.221175, Tag Correct(%) = 0.984183
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=71/126=0.563492
+Exceeds best previous performance of 0.81. Saving model file..
+##### Iteration 2
+current: 38, total block: 631
+Cost = 0.0410803, Tag Correct(%) = 1
+current: 138, total block: 631
+Cost = 0.0273899, Tag Correct(%) = 1
+current: 238, total block: 631
+Cost = 0.0187385, Tag Correct(%) = 0.995798
+current: 338, total block: 631
+Cost = 0.0360558, Tag Correct(%) = 0.991124
+current: 438, total block: 631
+Cost = 0.103436, Tag Correct(%) = 0.990868
+current: 538, total block: 631
+Cost = 0.0214609, Tag Correct(%) = 0.990706
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=71/126=0.563492
+Exceeds best previous performance of 0.825. Saving model file..
+##### Iteration 3
+current: 7, total block: 631
+Cost = 0.0171733, Tag Correct(%) = 1
+current: 107, total block: 631
+Cost = 0.0439731, Tag Correct(%) = 1
+current: 207, total block: 631
+Cost = 0.0251954, Tag Correct(%) = 1
+current: 307, total block: 631
+Cost = 0.293186, Tag Correct(%) = 0.996743
+current: 407, total block: 631
+Cost = 0.00236301, Tag Correct(%) = 0.997543
+current: 507, total block: 631
+Cost = 6.75943e-05, Tag Correct(%) = 0.998028
+current: 607, total block: 631
+Cost = 0.0389026, Tag Correct(%) = 0.998353
+dev:
+Accuracy:	P=491/600=0.818333
+test:
+Accuracy:	P=69/126=0.547619
+##### Iteration 4
+current: 76, total block: 631
+Cost = 0.017827, Tag Correct(%) = 1
+current: 176, total block: 631
+Cost = 0.00640127, Tag Correct(%) = 1
+current: 276, total block: 631
+Cost = 0.0882395, Tag Correct(%) = 1
+current: 376, total block: 631
+Cost = 0.0300229, Tag Correct(%) = 1
+current: 476, total block: 631
+Cost = 0.00240266, Tag Correct(%) = 1
+current: 576, total block: 631
+Cost = 0.0530967, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=70/126=0.555556
+##### Iteration 5
+current: 45, total block: 631
+Cost = 0.022186, Tag Correct(%) = 1
+current: 145, total block: 631
+Cost = 0.0355667, Tag Correct(%) = 1
+current: 245, total block: 631
+Cost = 0.00475909, Tag Correct(%) = 1
+current: 345, total block: 631
+Cost = 0.0120409, Tag Correct(%) = 1
+current: 445, total block: 631
+Cost = 0.275989, Tag Correct(%) = 1
+current: 545, total block: 631
+Cost = 0.000946709, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=70/126=0.555556
+##### Iteration 6
+current: 14, total block: 631
+Cost = 0.0437034, Tag Correct(%) = 1
+current: 114, total block: 631
+Cost = 0.00702923, Tag Correct(%) = 1
+current: 214, total block: 631
+Cost = 0.00253943, Tag Correct(%) = 1
+current: 314, total block: 631
+Cost = 0.0147658, Tag Correct(%) = 1
+current: 414, total block: 631
+Cost = 0.000686525, Tag Correct(%) = 1
+current: 514, total block: 631
+Cost = 0.000247951, Tag Correct(%) = 1
+current: 614, total block: 631
+Cost = 0.000175353, Tag Correct(%) = 1
+dev:
+Accuracy:	P=494/600=0.823333
+test:
+Accuracy:	P=70/126=0.555556
+##### Iteration 7
+current: 83, total block: 631
+Cost = 0.00126079, Tag Correct(%) = 1
+current: 183, total block: 631
+Cost = 0.00566205, Tag Correct(%) = 1
+current: 283, total block: 631
+Cost = 0.013236, Tag Correct(%) = 1
+current: 383, total block: 631
+Cost = 0.0030055, Tag Correct(%) = 1
+current: 483, total block: 631
+Cost = 0.00122935, Tag Correct(%) = 1
+current: 583, total block: 631
+Cost = 0.00130647, Tag Correct(%) = 1
+dev:
+Accuracy:	P=494/600=0.823333
+test:
+Accuracy:	P=70/126=0.555556
+##### Iteration 8
+current: 52, total block: 631
+Cost = 0.0121546, Tag Correct(%) = 1
+current: 152, total block: 631
+Cost = 0.0056388, Tag Correct(%) = 1
+current: 252, total block: 631
+Cost = 0.00318833, Tag Correct(%) = 1
+current: 352, total block: 631
+Cost = 0.0192977, Tag Correct(%) = 1
+current: 452, total block: 631
+Cost = 0.013585, Tag Correct(%) = 1
+current: 552, total block: 631
+Cost = 0.0139523, Tag Correct(%) = 1
+dev:
+Accuracy:	P=494/600=0.823333
+test:
+Accuracy:	P=69/126=0.547619
+##### Iteration 9
+current: 21, total block: 631
+Cost = 0.00462457, Tag Correct(%) = 1
+current: 121, total block: 631
+Cost = 0.144973, Tag Correct(%) = 1
+current: 221, total block: 631
+Cost = 0.000103092, Tag Correct(%) = 1
+current: 321, total block: 631
+Cost = 0.000215656, Tag Correct(%) = 1
+current: 421, total block: 631
+Cost = 0.000323917, Tag Correct(%) = 1
+current: 521, total block: 631
+Cost = 0.00770261, Tag Correct(%) = 1
+current: 621, total block: 631
+Cost = 0.00244401, Tag Correct(%) = 1
+dev:
+Accuracy:	P=493/600=0.821667
+test:
+Accuracy:	P=69/126=0.547619
+##### Iteration 10
+current: 90, total block: 631
+Cost = 0.00144959, Tag Correct(%) = 1
+current: 190, total block: 631
+Cost = 0.000447783, Tag Correct(%) = 1
+current: 290, total block: 631
+Cost = 0.00302671, Tag Correct(%) = 1
+current: 390, total block: 631
+Cost = 0.000103801, Tag Correct(%) = 1
+current: 490, total block: 631
+Cost = 0.00277265, Tag Correct(%) = 1
+current: 590, total block: 631
+Cost = 0.00413709, Tag Correct(%) = 1
+dev:
+Accuracy:	P=493/600=0.821667
+test:
+Accuracy:	P=69/126=0.547619
+##### Iteration 11
+current: 59, total block: 631
+Cost = 0.0779399, Tag Correct(%) = 1
+current: 159, total block: 631
+Cost = 0.00565121, Tag Correct(%) = 1
+current: 259, total block: 631
+Cost = 7.21274e-06, Tag Correct(%) = 1
+current: 359, total block: 631
+Cost = 0.00187173, Tag Correct(%) = 1
+current: 459, total block: 631
+Cost = 0.000240201, Tag Correct(%) = 1
+current: 559, total block: 631
+Cost = 0.00217913, Tag Correct(%) = 1
+dev:
+Accuracy:	P=493/600=0.821667
+test:
+Accuracy:	P=69/126=0.547619
+##### Iteration 12
+current: 28, total block: 631
+Cost = 0.0044238, Tag Correct(%) = 1
+current: 128, total block: 631
+Cost = 0.00656562, Tag Correct(%) = 1
+current: 228, total block: 631
+Cost = 2.20825e-05, Tag Correct(%) = 1
+current: 328, total block: 631
+Cost = 0.00306132, Tag Correct(%) = 1
+current: 428, total block: 631
+Cost = 0.00165782, Tag Correct(%) = 1
+current: 528, total block: 631
+Cost = 0.0211208, Tag Correct(%) = 1
+current: 628, total block: 631
+Cost = 0.00138663, Tag Correct(%) = 1
+dev:
+Accuracy:	P=491/600=0.818333
+test:
+Accuracy:	P=69/126=0.547619
+##### Iteration 13
+current: 97, total block: 631
+Cost = 3.98922e-05, Tag Correct(%) = 1
+current: 197, total block: 631
+Cost = 0.00106332, Tag Correct(%) = 1
+current: 297, total block: 631
+Cost = 0.00547971, Tag Correct(%) = 1
+current: 397, total block: 631
+Cost = 0.00222075, Tag Correct(%) = 1
+current: 497, total block: 631
+Cost = 9.49627e-05, Tag Correct(%) = 1
+current: 597, total block: 631
+Cost = 0.00842829, Tag Correct(%) = 1
+dev:
+Accuracy:	P=491/600=0.818333
+test:
+Accuracy:	P=69/126=0.547619
+##### Iteration 14
+current: 66, total block: 631
+Cost = 0.000271521, Tag Correct(%) = 1
+current: 166, total block: 631
+Cost = 0.00506824, Tag Correct(%) = 1
+current: 266, total block: 631
+Cost = 0.00160236, Tag Correct(%) = 1
+current: 366, total block: 631
+Cost = 0.00520214, Tag Correct(%) = 1
+current: 466, total block: 631
+Cost = 0.00153151, Tag Correct(%) = 1
+current: 566, total block: 631
+Cost = 0.00248145, Tag Correct(%) = 1
+dev:
+Accuracy:	P=492/600=0.82
+test:
+Accuracy:	P=69/126=0.547619
+##### Iteration 15
+current: 35, total block: 631
+Cost = 0.00481506, Tag Correct(%) = 1
+current: 135, total block: 631
+Cost = 0.0272636, Tag Correct(%) = 1
+current: 235, total block: 631
+Cost = 0.000764736, Tag Correct(%) = 1
+current: 335, total block: 631
+Cost = 5.18709e-05, Tag Correct(%) = 1
+current: 435, total block: 631
+Cost = 6.24265e-05, Tag Correct(%) = 1
+current: 535, total block: 631
+Cost = 0.000495508, Tag Correct(%) = 1
+dev:
+Accuracy:	P=492/600=0.82
+test:
+Accuracy:	P=69/126=0.547619
+##### Iteration 16
+current: 4, total block: 631
+Cost = 0.0029574, Tag Correct(%) = 1
+current: 104, total block: 631
+Cost = 7.48626e-06, Tag Correct(%) = 1
+current: 204, total block: 631
+Cost = 0.00207886, Tag Correct(%) = 1
+current: 304, total block: 631
+Cost = 0.000241085, Tag Correct(%) = 1
+current: 404, total block: 631
+Cost = 0.002599, Tag Correct(%) = 1
+current: 504, total block: 631
+Cost = 0.00127651, Tag Correct(%) = 1
+current: 604, total block: 631
+Cost = 0.00650412, Tag Correct(%) = 1
+dev:
+Accuracy:	P=492/600=0.82
+test:
+Accuracy:	P=69/126=0.547619
+##### Iteration 17
+current: 73, total block: 631
+Cost = 0.000842427, Tag Correct(%) = 1
+current: 173, total block: 631
+Cost = 0.000178072, Tag Correct(%) = 1
+current: 273, total block: 631
+Cost = 0.00116231, Tag Correct(%) = 1
+current: 373, total block: 631
+Cost = 0.00982457, Tag Correct(%) = 1
+current: 473, total block: 631
+Cost = 0.000922492, Tag Correct(%) = 1
+current: 573, total block: 631
+Cost = 0.000958288, Tag Correct(%) = 1
+dev:
+Accuracy:	P=492/600=0.82
+test:
+Accuracy:	P=69/126=0.547619
+##### Iteration 18
+current: 42, total block: 631
+Cost = 2.2959e-06, Tag Correct(%) = 1
+current: 142, total block: 631
+Cost = 0.00153979, Tag Correct(%) = 1
+current: 242, total block: 631
+Cost = 0.000913891, Tag Correct(%) = 1
+current: 342, total block: 631
+Cost = 0.000103565, Tag Correct(%) = 1
+current: 442, total block: 631
+Cost = 0.00122259, Tag Correct(%) = 1
+current: 542, total block: 631
+Cost = 0.000247203, Tag Correct(%) = 1
+dev:
+Accuracy:	P=492/600=0.82
+test:
+Accuracy:	P=69/126=0.547619
+##### Iteration 19
+current: 11, total block: 631
+Cost = 0.00987338, Tag Correct(%) = 1
+current: 111, total block: 631
+Cost = 9.11304e-05, Tag Correct(%) = 1
+current: 211, total block: 631
+Cost = 0.00381377, Tag Correct(%) = 1
+current: 311, total block: 631
+Cost = 6.37178e-06, Tag Correct(%) = 1
+current: 411, total block: 631
+Cost = 0.000121982, Tag Correct(%) = 1
+current: 511, total block: 631
+Cost = 0.000231208, Tag Correct(%) = 1
+current: 611, total block: 631
+Cost = 0.00195486, Tag Correct(%) = 1
+dev:
+Accuracy:	P=492/600=0.82
+test:
+Accuracy:	P=69/126=0.547619
+##### Iteration 20
+current: 80, total block: 631
+Cost = 4.36748e-05, Tag Correct(%) = 1
+current: 180, total block: 631
+Cost = 0.00333442, Tag Correct(%) = 1
+current: 280, total block: 631
+Cost = 0.00443088, Tag Correct(%) = 1
+current: 380, total block: 631
+Cost = 0.000997236, Tag Correct(%) = 1
+current: 480, total block: 631
+Cost = 0.000820931, Tag Correct(%) = 1
+current: 580, total block: 631
+Cost = 6.0631e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=492/600=0.82
+test:
+Accuracy:	P=69/126=0.547619
+##### Iteration 21
+current: 49, total block: 631
+Cost = 0.000581086, Tag Correct(%) = 1
+current: 149, total block: 631
+Cost = 2.6239e-05, Tag Correct(%) = 1
+current: 249, total block: 631
+Cost = 0.00053016, Tag Correct(%) = 1
+current: 349, total block: 631
+Cost = 0.00290535, Tag Correct(%) = 1
+current: 449, total block: 631
+Cost = 0.00236871, Tag Correct(%) = 1
+current: 549, total block: 631
+Cost = 0.00118071, Tag Correct(%) = 1
+dev:
+Accuracy:	P=492/600=0.82
+test:
+Accuracy:	P=69/126=0.547619
+##### Iteration 22
+current: 18, total block: 631
+Cost = 0.000125346, Tag Correct(%) = 1
+current: 118, total block: 631
+Cost = 0.00019288, Tag Correct(%) = 1
+current: 218, total block: 631
+Cost = 0.00375629, Tag Correct(%) = 1
+current: 318, total block: 631
+Cost = 3.92543e-05, Tag Correct(%) = 1
+current: 418, total block: 631
+Cost = 0.000338157, Tag Correct(%) = 1
+current: 518, total block: 631
+Cost = 9.82459e-06, Tag Correct(%) = 1
+current: 618, total block: 631
+Cost = 4.58265e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=492/600=0.82
+test:
+Accuracy:	P=69/126=0.547619
+##### Iteration 23
+current: 87, total block: 631
+Cost = 0.0359138, Tag Correct(%) = 1
+current: 187, total block: 631
+Cost = 0.00169157, Tag Correct(%) = 1
+current: 287, total block: 631
+Cost = 0.000415895, Tag Correct(%) = 1
+current: 387, total block: 631
+Cost = 0.0045395, Tag Correct(%) = 1
+current: 487, total block: 631
+Cost = 9.24519e-05, Tag Correct(%) = 1
+current: 587, total block: 631
+Cost = 0.000830141, Tag Correct(%) = 1
+dev:
+Accuracy:	P=491/600=0.818333
+test:
+Accuracy:	P=66/126=0.52381
+##### Iteration 24
+current: 56, total block: 631
+Cost = 0.000144087, Tag Correct(%) = 1
+current: 156, total block: 631
+Cost = 3.52301e-05, Tag Correct(%) = 1
+current: 256, total block: 631
+Cost = 0.000172475, Tag Correct(%) = 1
+current: 356, total block: 631
+Cost = 0.0015749, Tag Correct(%) = 1
+current: 456, total block: 631
+Cost = 0.000723395, Tag Correct(%) = 1
+current: 556, total block: 631
+Cost = 9.08114e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=491/600=0.818333
+test:
+Accuracy:	P=66/126=0.52381
+##### Iteration 25
+current: 25, total block: 631
+Cost = 0.00164282, Tag Correct(%) = 1
+current: 125, total block: 631
+Cost = 0.000573569, Tag Correct(%) = 1
+current: 225, total block: 631
+Cost = 0.00651726, Tag Correct(%) = 1
+current: 325, total block: 631
+Cost = 0.000795359, Tag Correct(%) = 1
+current: 425, total block: 631
+Cost = 0.000788216, Tag Correct(%) = 1
+current: 525, total block: 631
+Cost = 0.00375513, Tag Correct(%) = 1
+current: 625, total block: 631
+Cost = 0.00353897, Tag Correct(%) = 1
+dev:
+Accuracy:	P=491/600=0.818333
+test:
+Accuracy:	P=66/126=0.52381
+##### Iteration 26
+current: 94, total block: 631
+Cost = 0.000251992, Tag Correct(%) = 1
+current: 194, total block: 631
+Cost = 0.00128107, Tag Correct(%) = 1
+current: 294, total block: 631
+Cost = 0.000247539, Tag Correct(%) = 1
+current: 394, total block: 631
+Cost = 0.00031266, Tag Correct(%) = 1
+current: 494, total block: 631
+Cost = 0.000428777, Tag Correct(%) = 1
+current: 594, total block: 631
+Cost = 0.00114973, Tag Correct(%) = 1
+dev:
+Accuracy:	P=491/600=0.818333
+test:
+Accuracy:	P=66/126=0.52381
+##### Iteration 27
+current: 63, total block: 631
+Cost = 6.63117e-05, Tag Correct(%) = 1
+current: 163, total block: 631
+Cost = 0.000328228, Tag Correct(%) = 1
+current: 263, total block: 631
+Cost = 0.00111093, Tag Correct(%) = 1
+current: 363, total block: 631
+Cost = 0.000143217, Tag Correct(%) = 1
+current: 463, total block: 631
+Cost = 2.86248e-05, Tag Correct(%) = 1
+current: 563, total block: 631
+Cost = 0.00748354, Tag Correct(%) = 1
+dev:
+Accuracy:	P=491/600=0.818333
+test:
+Accuracy:	P=66/126=0.52381
+##### Iteration 28
+current: 32, total block: 631
+Cost = 0.000116277, Tag Correct(%) = 1
+current: 132, total block: 631
+Cost = 0.00138116, Tag Correct(%) = 1
+current: 232, total block: 631
+Cost = 0.00107006, Tag Correct(%) = 1
+current: 332, total block: 631
+Cost = 0.00239966, Tag Correct(%) = 1
+current: 432, total block: 631
+Cost = 0.000500228, Tag Correct(%) = 1
+current: 532, total block: 631
+Cost = 2.32513e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=491/600=0.818333
+test:
+Accuracy:	P=66/126=0.52381
+##### Iteration 29
+current: 1, total block: 631
+Cost = 0.000446407, Tag Correct(%) = 1
+current: 101, total block: 631
+Cost = 0.000472198, Tag Correct(%) = 1
+current: 201, total block: 631
+Cost = 0.000184712, Tag Correct(%) = 1
+current: 301, total block: 631
+Cost = 0.000776667, Tag Correct(%) = 1
+current: 401, total block: 631
+Cost = 0.00223025, Tag Correct(%) = 1
+current: 501, total block: 631
+Cost = 6.58452e-06, Tag Correct(%) = 1
+current: 601, total block: 631
+Cost = 0.000195519, Tag Correct(%) = 1
+dev:
+Accuracy:	P=491/600=0.818333
+test:
+Accuracy:	P=66/126=0.52381
+##### Iteration 30
+current: 70, total block: 631
+Cost = 0.000586063, Tag Correct(%) = 1
+current: 170, total block: 631
+Cost = 0.00641592, Tag Correct(%) = 1
+current: 270, total block: 631
+Cost = 0.000147329, Tag Correct(%) = 1
+current: 370, total block: 631
+Cost = 6.86217e-05, Tag Correct(%) = 1
+current: 470, total block: 631
+Cost = 1.01496e-05, Tag Correct(%) = 1
+current: 570, total block: 631
+Cost = 0.0185134, Tag Correct(%) = 1
+dev:
+Accuracy:	P=491/600=0.818333
+test:
+Accuracy:	P=66/126=0.52381
+##### Iteration 31
+current: 39, total block: 631
+Cost = 0.000605915, Tag Correct(%) = 1
+current: 139, total block: 631
+Cost = 0.00022179, Tag Correct(%) = 1
+current: 239, total block: 631
+Cost = 0.000432469, Tag Correct(%) = 1
+current: 339, total block: 631
+Cost = 0.000240923, Tag Correct(%) = 1
+current: 439, total block: 631
+Cost = 0.000244537, Tag Correct(%) = 1
+current: 539, total block: 631
+Cost = 0.000158813, Tag Correct(%) = 1
+dev:
+Accuracy:	P=491/600=0.818333
+test:
+Accuracy:	P=66/126=0.52381
+##### Iteration 32
+current: 8, total block: 631
+Cost = 0.00108175, Tag Correct(%) = 1
+current: 108, total block: 631
+Cost = 0.000602953, Tag Correct(%) = 1
+current: 208, total block: 631
+Cost = 0.0122738, Tag Correct(%) = 1
+current: 308, total block: 631
+Cost = 0.00343346, Tag Correct(%) = 1
+current: 408, total block: 631
+Cost = 0.000141372, Tag Correct(%) = 1
+current: 508, total block: 631
+Cost = 0.000450741, Tag Correct(%) = 1
+current: 608, total block: 631
+Cost = 0.000956221, Tag Correct(%) = 1
+dev:
+Accuracy:	P=491/600=0.818333
+test:
+Accuracy:	P=66/126=0.52381
+##### Iteration 33
+current: 77, total block: 631
+Cost = 0.00199172, Tag Correct(%) = 1
+current: 177, total block: 631
+Cost = 7.87666e-05, Tag Correct(%) = 1
+current: 277, total block: 631
+Cost = 0.000960055, Tag Correct(%) = 1
+current: 377, total block: 631
+Cost = 0.00368351, Tag Correct(%) = 1
+current: 477, total block: 631
+Cost = 0.00162242, Tag Correct(%) = 1
+current: 577, total block: 631
+Cost = 0.000546086, Tag Correct(%) = 1
+dev:
+Accuracy:	P=491/600=0.818333
+test:
+Accuracy:	P=66/126=0.52381
+##### Iteration 34
+current: 46, total block: 631
+Cost = 0.000376786, Tag Correct(%) = 1
+current: 146, total block: 631
+Cost = 0.000262749, Tag Correct(%) = 1
+current: 246, total block: 631
+Cost = 0.00011637, Tag Correct(%) = 1
+current: 346, total block: 631
+Cost = 0.000558247, Tag Correct(%) = 1
+current: 446, total block: 631
+Cost = 0.000102317, Tag Correct(%) = 1
+current: 546, total block: 631
+Cost = 0.00535995, Tag Correct(%) = 1
+dev:
+Accuracy:	P=491/600=0.818333
+test:
+Accuracy:	P=66/126=0.52381
+##### Iteration 35
+current: 15, total block: 631
+Cost = 0.000123048, Tag Correct(%) = 1
+current: 115, total block: 631
+Cost = 0.000211948, Tag Correct(%) = 1
+current: 215, total block: 631
+Cost = 0.000152234, Tag Correct(%) = 1
+current: 315, total block: 631
+Cost = 0.00426765, Tag Correct(%) = 1
+current: 415, total block: 631
+Cost = 0.000349753, Tag Correct(%) = 1
+current: 515, total block: 631
+Cost = 1.42881e-05, Tag Correct(%) = 1
+current: 615, total block: 631
+Cost = 6.4685e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=491/600=0.818333
+test:
+Accuracy:	P=66/126=0.52381
+##### Iteration 36
+current: 84, total block: 631
+Cost = 0.00121913, Tag Correct(%) = 1
+current: 184, total block: 631
+Cost = 0.000653325, Tag Correct(%) = 1
+current: 284, total block: 631
+Cost = 0.000412975, Tag Correct(%) = 1
+current: 384, total block: 631
+Cost = 0.00148845, Tag Correct(%) = 1
+current: 484, total block: 631
+Cost = 0.000749664, Tag Correct(%) = 1
+current: 584, total block: 631
+Cost = 0.0004724, Tag Correct(%) = 1
+dev:
+Accuracy:	P=492/600=0.82
+test:
+Accuracy:	P=66/126=0.52381
+##### Iteration 37
+current: 53, total block: 631
+Cost = 3.21493e-06, Tag Correct(%) = 1
+current: 153, total block: 631
+Cost = 3.94625e-06, Tag Correct(%) = 1
+current: 253, total block: 631
+Cost = 0.000138525, Tag Correct(%) = 1
+current: 353, total block: 631
+Cost = 0.00148675, Tag Correct(%) = 1
+current: 453, total block: 631
+Cost = 0.000239969, Tag Correct(%) = 1
+current: 553, total block: 631
+Cost = 0.0012112, Tag Correct(%) = 1
+dev:
+Accuracy:	P=492/600=0.82
+test:
+Accuracy:	P=66/126=0.52381
+##### Iteration 38
+current: 22, total block: 631
+Cost = 5.02851e-05, Tag Correct(%) = 1
+current: 122, total block: 631
+Cost = 0.0103213, Tag Correct(%) = 1
+current: 222, total block: 631
+Cost = 2.84631e-05, Tag Correct(%) = 1
+current: 322, total block: 631
+Cost = 0.000727675, Tag Correct(%) = 1
+current: 422, total block: 631
+Cost = 1.74275e-05, Tag Correct(%) = 1
+current: 522, total block: 631
+Cost = 0.00103311, Tag Correct(%) = 1
+current: 622, total block: 631
+Cost = 3.10389e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=492/600=0.82
+test:
+Accuracy:	P=66/126=0.52381
+##### Iteration 39
+current: 91, total block: 631
+Cost = 0.000764898, Tag Correct(%) = 1
+current: 191, total block: 631
+Cost = 4.74902e-05, Tag Correct(%) = 1
+current: 291, total block: 631
+Cost = 3.18512e-06, Tag Correct(%) = 1
+current: 391, total block: 631
+Cost = 0.00013961, Tag Correct(%) = 1
+current: 491, total block: 631
+Cost = 0.000842527, Tag Correct(%) = 1
+current: 591, total block: 631
+Cost = 0.00285155, Tag Correct(%) = 1
+dev:
+Accuracy:	P=492/600=0.82
+test:
+Accuracy:	P=66/126=0.52381
+##### Iteration 40
+current: 60, total block: 631
+Cost = 3.55486e-06, Tag Correct(%) = 1
+current: 160, total block: 631
+Cost = 0.00119187, Tag Correct(%) = 1
+current: 260, total block: 631
+Cost = 5.28411e-05, Tag Correct(%) = 1
+current: 360, total block: 631
+Cost = 0.000319403, Tag Correct(%) = 1
+current: 460, total block: 631
+Cost = 0.000211163, Tag Correct(%) = 1
+current: 560, total block: 631
+Cost = 0.000380169, Tag Correct(%) = 1
+dev:
+Accuracy:	P=492/600=0.82
+test:
+Accuracy:	P=66/126=0.52381
+##### Iteration 41
+current: 29, total block: 631
+Cost = 0.000159671, Tag Correct(%) = 1
+current: 129, total block: 631
+Cost = 6.62112e-05, Tag Correct(%) = 1
+current: 229, total block: 631
+Cost = 0.00073483, Tag Correct(%) = 1
+current: 329, total block: 631
+Cost = 0.00057682, Tag Correct(%) = 1
+current: 429, total block: 631
+Cost = 0.00311744, Tag Correct(%) = 1
+current: 529, total block: 631
+Cost = 0.000811182, Tag Correct(%) = 1
+current: 629, total block: 631
+Cost = 7.36382e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=492/600=0.82
+test:
+Accuracy:	P=67/126=0.531746
+##### Iteration 42
+current: 98, total block: 631
+Cost = 0.00050983, Tag Correct(%) = 1
+current: 198, total block: 631
+Cost = 0.00189832, Tag Correct(%) = 1
+current: 298, total block: 631
+Cost = 0.000157662, Tag Correct(%) = 1
+current: 398, total block: 631
+Cost = 0.000274667, Tag Correct(%) = 1
+current: 498, total block: 631
+Cost = 0.00133293, Tag Correct(%) = 1
+current: 598, total block: 631
+Cost = 0.00131321, Tag Correct(%) = 1
+dev:
+Accuracy:	P=492/600=0.82
+test:
+Accuracy:	P=67/126=0.531746
+##### Iteration 43
+current: 67, total block: 631
+Cost = 0.00739339, Tag Correct(%) = 1
+current: 167, total block: 631
+Cost = 0.00128141, Tag Correct(%) = 1
+current: 267, total block: 631
+Cost = 0.000139058, Tag Correct(%) = 1
+current: 367, total block: 631
+Cost = 7.67438e-05, Tag Correct(%) = 1
+current: 467, total block: 631
+Cost = 0.000576449, Tag Correct(%) = 1
+current: 567, total block: 631
+Cost = 4.15164e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=494/600=0.823333
+test:
+Accuracy:	P=67/126=0.531746
+##### Iteration 44
+current: 36, total block: 631
+Cost = 5.99574e-05, Tag Correct(%) = 1
+current: 136, total block: 631
+Cost = 0.000453218, Tag Correct(%) = 1
+current: 236, total block: 631
+Cost = 7.30815e-05, Tag Correct(%) = 1
+current: 336, total block: 631
+Cost = 0.000347494, Tag Correct(%) = 1
+current: 436, total block: 631
+Cost = 0.000740444, Tag Correct(%) = 1
+current: 536, total block: 631
+Cost = 0.00176616, Tag Correct(%) = 1
+dev:
+Accuracy:	P=494/600=0.823333
+test:
+Accuracy:	P=67/126=0.531746
+##### Iteration 45
+current: 5, total block: 631
+Cost = 0.000710925, Tag Correct(%) = 1
+current: 105, total block: 631
+Cost = 8.03877e-06, Tag Correct(%) = 1
+current: 205, total block: 631
+Cost = 9.5151e-06, Tag Correct(%) = 1
+current: 305, total block: 631
+Cost = 0.00539962, Tag Correct(%) = 1
+current: 405, total block: 631
+Cost = 1.34953e-05, Tag Correct(%) = 1
+current: 505, total block: 631
+Cost = 7.2638e-05, Tag Correct(%) = 1
+current: 605, total block: 631
+Cost = 3.78073e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=494/600=0.823333
+test:
+Accuracy:	P=67/126=0.531746
+##### Iteration 46
+current: 74, total block: 631
+Cost = 0.000259857, Tag Correct(%) = 1
+current: 174, total block: 631
+Cost = 4.44627e-05, Tag Correct(%) = 1
+current: 274, total block: 631
+Cost = 0.00209944, Tag Correct(%) = 1
+current: 374, total block: 631
+Cost = 0.000679171, Tag Correct(%) = 1
+current: 474, total block: 631
+Cost = 0.00921773, Tag Correct(%) = 1
+current: 574, total block: 631
+Cost = 0.00098871, Tag Correct(%) = 1
+dev:
+Accuracy:	P=494/600=0.823333
+test:
+Accuracy:	P=67/126=0.531746
+##### Iteration 47
+current: 43, total block: 631
+Cost = 0.00418165, Tag Correct(%) = 1
+current: 143, total block: 631
+Cost = 0.000244249, Tag Correct(%) = 1
+current: 243, total block: 631
+Cost = 0.00116298, Tag Correct(%) = 1
+current: 343, total block: 631
+Cost = 3.68703e-05, Tag Correct(%) = 1
+current: 443, total block: 631
+Cost = 1.17484e-05, Tag Correct(%) = 1
+current: 543, total block: 631
+Cost = 0.00306735, Tag Correct(%) = 1
+dev:
+Accuracy:	P=494/600=0.823333
+test:
+Accuracy:	P=67/126=0.531746
+##### Iteration 48
+current: 12, total block: 631
+Cost = 0.000806633, Tag Correct(%) = 1
+current: 112, total block: 631
+Cost = 2.02347e-05, Tag Correct(%) = 1
+current: 212, total block: 631
+Cost = 4.54753e-05, Tag Correct(%) = 1
+current: 312, total block: 631
+Cost = 2.75156e-05, Tag Correct(%) = 1
+current: 412, total block: 631
+Cost = 1.17684e-05, Tag Correct(%) = 1
+current: 512, total block: 631
+Cost = 0.000575263, Tag Correct(%) = 1
+current: 612, total block: 631
+Cost = 2.17372e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=494/600=0.823333
+test:
+Accuracy:	P=67/126=0.531746
+##### Iteration 49
+current: 81, total block: 631
+Cost = 1.05374e-05, Tag Correct(%) = 1
+current: 181, total block: 631
+Cost = 0.000952216, Tag Correct(%) = 1
+current: 281, total block: 631
+Cost = 0.000566425, Tag Correct(%) = 1
+current: 381, total block: 631
+Cost = 0.000810543, Tag Correct(%) = 1
+current: 481, total block: 631
+Cost = 0.00459764, Tag Correct(%) = 1
+current: 581, total block: 631
+Cost = 0.000257726, Tag Correct(%) = 1
+dev:
+Accuracy:	P=494/600=0.823333
+test:
+Accuracy:	P=67/126=0.531746
+##### Iteration 50
+current: 50, total block: 631
+Cost = 0.00247481, Tag Correct(%) = 1
+current: 150, total block: 631
+Cost = 3.41006e-05, Tag Correct(%) = 1
+current: 250, total block: 631
+Cost = 0.00061389, Tag Correct(%) = 1
+current: 350, total block: 631
+Cost = 0.00354592, Tag Correct(%) = 1
+current: 450, total block: 631
+Cost = 3.11432e-05, Tag Correct(%) = 1
+current: 550, total block: 631
+Cost = 0.00233412, Tag Correct(%) = 1
+dev:
+Accuracy:	P=494/600=0.823333
+test:
+Accuracy:	P=67/126=0.531746
+##### Iteration 51
+current: 19, total block: 631
+Cost = 3.23042e-05, Tag Correct(%) = 1
+current: 119, total block: 631
+Cost = 0.000461608, Tag Correct(%) = 1
+current: 219, total block: 631
+Cost = 0.000320709, Tag Correct(%) = 1
+current: 319, total block: 631
+Cost = 5.8226e-05, Tag Correct(%) = 1
+current: 419, total block: 631
+Cost = 1.96466e-06, Tag Correct(%) = 1
+current: 519, total block: 631
+Cost = 0.0013292, Tag Correct(%) = 1
+current: 619, total block: 631
+Cost = 0.0017164, Tag Correct(%) = 1
+dev:
+Accuracy:	P=494/600=0.823333
+test:
+Accuracy:	P=67/126=0.531746
+##### Iteration 52
+current: 88, total block: 631
+Cost = 0.00686419, Tag Correct(%) = 1
+current: 188, total block: 631
+Cost = 0.000235282, Tag Correct(%) = 1
+current: 288, total block: 631
+Cost = 0.000240686, Tag Correct(%) = 1
+current: 388, total block: 631
+Cost = 0.00149496, Tag Correct(%) = 1
+current: 488, total block: 631
+Cost = 0.000631385, Tag Correct(%) = 1
+current: 588, total block: 631
+Cost = 0.000789762, Tag Correct(%) = 1
+dev:
+Accuracy:	P=494/600=0.823333
+test:
+Accuracy:	P=67/126=0.531746
+##### Iteration 53
+current: 57, total block: 631
+Cost = 2.86977e-06, Tag Correct(%) = 1
+current: 157, total block: 631
+Cost = 0.000320714, Tag Correct(%) = 1
+current: 257, total block: 631
+Cost = 0.000356389, Tag Correct(%) = 1
+current: 357, total block: 631
+Cost = 0.0020864, Tag Correct(%) = 1
+current: 457, total block: 631
+Cost = 0.000454313, Tag Correct(%) = 1
+current: 557, total block: 631
+Cost = 3.16279e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=67/126=0.531746
+##### Iteration 54
+current: 26, total block: 631
+Cost = 2.6033e-05, Tag Correct(%) = 1
+current: 126, total block: 631
+Cost = 0.000245392, Tag Correct(%) = 1
+current: 226, total block: 631
+Cost = 0.000197807, Tag Correct(%) = 1
+current: 326, total block: 631
+Cost = 0.000382864, Tag Correct(%) = 1
+current: 426, total block: 631
+Cost = 5.67209e-05, Tag Correct(%) = 1
+current: 526, total block: 631
+Cost = 0.000400847, Tag Correct(%) = 1
+current: 626, total block: 631
+Cost = 0.00297994, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=67/126=0.531746
+##### Iteration 55
+current: 95, total block: 631
+Cost = 1.79175e-07, Tag Correct(%) = 1
+current: 195, total block: 631
+Cost = 0.00200728, Tag Correct(%) = 1
+current: 295, total block: 631
+Cost = 0.000480089, Tag Correct(%) = 1
+current: 395, total block: 631
+Cost = 2.61956e-05, Tag Correct(%) = 1
+current: 495, total block: 631
+Cost = 2.75682e-05, Tag Correct(%) = 1
+current: 595, total block: 631
+Cost = 0.000100049, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=67/126=0.531746
+##### Iteration 56
+current: 64, total block: 631
+Cost = 0.000109153, Tag Correct(%) = 1
+current: 164, total block: 631
+Cost = 0.000851483, Tag Correct(%) = 1
+current: 264, total block: 631
+Cost = 2.2501e-05, Tag Correct(%) = 1
+current: 364, total block: 631
+Cost = 0.000127619, Tag Correct(%) = 1
+current: 464, total block: 631
+Cost = 0.000331151, Tag Correct(%) = 1
+current: 564, total block: 631
+Cost = 0.000193077, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=67/126=0.531746
+##### Iteration 57
+current: 33, total block: 631
+Cost = 0.000520524, Tag Correct(%) = 1
+current: 133, total block: 631
+Cost = 3.10708e-05, Tag Correct(%) = 1
+current: 233, total block: 631
+Cost = 0.000381689, Tag Correct(%) = 1
+current: 333, total block: 631
+Cost = 0.000357001, Tag Correct(%) = 1
+current: 433, total block: 631
+Cost = 0.000547544, Tag Correct(%) = 1
+current: 533, total block: 631
+Cost = 0.00121613, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=67/126=0.531746
+##### Iteration 58
+current: 2, total block: 631
+Cost = 8.19118e-06, Tag Correct(%) = 1
+current: 102, total block: 631
+Cost = 0.00147632, Tag Correct(%) = 1
+current: 202, total block: 631
+Cost = 2.34434e-07, Tag Correct(%) = 1
+current: 302, total block: 631
+Cost = 0.000243957, Tag Correct(%) = 1
+current: 402, total block: 631
+Cost = 0.000983031, Tag Correct(%) = 1
+current: 502, total block: 631
+Cost = 0.000195276, Tag Correct(%) = 1
+current: 602, total block: 631
+Cost = 0.000205586, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 59
+current: 71, total block: 631
+Cost = 0.00817216, Tag Correct(%) = 1
+current: 171, total block: 631
+Cost = 0.000170823, Tag Correct(%) = 1
+current: 271, total block: 631
+Cost = 0.0105459, Tag Correct(%) = 1
+current: 371, total block: 631
+Cost = 1.46117e-07, Tag Correct(%) = 1
+current: 471, total block: 631
+Cost = 0.000471929, Tag Correct(%) = 1
+current: 571, total block: 631
+Cost = 8.8653e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 60
+current: 40, total block: 631
+Cost = 8.31612e-06, Tag Correct(%) = 1
+current: 140, total block: 631
+Cost = 0.000358624, Tag Correct(%) = 1
+current: 240, total block: 631
+Cost = 0.000808692, Tag Correct(%) = 1
+current: 340, total block: 631
+Cost = 0.00111182, Tag Correct(%) = 1
+current: 440, total block: 631
+Cost = 0.000151558, Tag Correct(%) = 1
+current: 540, total block: 631
+Cost = 0.000177322, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 61
+current: 9, total block: 631
+Cost = 3.77893e-05, Tag Correct(%) = 1
+current: 109, total block: 631
+Cost = 9.62575e-06, Tag Correct(%) = 1
+current: 209, total block: 631
+Cost = 8.87661e-05, Tag Correct(%) = 1
+current: 309, total block: 631
+Cost = 0.000102199, Tag Correct(%) = 1
+current: 409, total block: 631
+Cost = 8.49595e-05, Tag Correct(%) = 1
+current: 509, total block: 631
+Cost = 0.000227708, Tag Correct(%) = 1
+current: 609, total block: 631
+Cost = 0.000793401, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 62
+current: 78, total block: 631
+Cost = 0.000206389, Tag Correct(%) = 1
+current: 178, total block: 631
+Cost = 0.000433394, Tag Correct(%) = 1
+current: 278, total block: 631
+Cost = 5.60842e-05, Tag Correct(%) = 1
+current: 378, total block: 631
+Cost = 8.65017e-05, Tag Correct(%) = 1
+current: 478, total block: 631
+Cost = 0.000185961, Tag Correct(%) = 1
+current: 578, total block: 631
+Cost = 0.00146997, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 63
+current: 47, total block: 631
+Cost = 0.000405347, Tag Correct(%) = 1
+current: 147, total block: 631
+Cost = 2.27503e-05, Tag Correct(%) = 1
+current: 247, total block: 631
+Cost = 0.000385163, Tag Correct(%) = 1
+current: 347, total block: 631
+Cost = 2.26922e-05, Tag Correct(%) = 1
+current: 447, total block: 631
+Cost = 0.000281927, Tag Correct(%) = 1
+current: 547, total block: 631
+Cost = 0.000157708, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 64
+current: 16, total block: 631
+Cost = 1.35164e-06, Tag Correct(%) = 1
+current: 116, total block: 631
+Cost = 0.00166048, Tag Correct(%) = 1
+current: 216, total block: 631
+Cost = 4.49213e-05, Tag Correct(%) = 1
+current: 316, total block: 631
+Cost = 4.00623e-05, Tag Correct(%) = 1
+current: 416, total block: 631
+Cost = 7.36453e-05, Tag Correct(%) = 1
+current: 516, total block: 631
+Cost = 0.000783743, Tag Correct(%) = 1
+current: 616, total block: 631
+Cost = 0.000339177, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 65
+current: 85, total block: 631
+Cost = 7.99131e-05, Tag Correct(%) = 1
+current: 185, total block: 631
+Cost = 1.31607e-05, Tag Correct(%) = 1
+current: 285, total block: 631
+Cost = 0.000719766, Tag Correct(%) = 1
+current: 385, total block: 631
+Cost = 4.58389e-05, Tag Correct(%) = 1
+current: 485, total block: 631
+Cost = 4.38345e-05, Tag Correct(%) = 1
+current: 585, total block: 631
+Cost = 0.000107604, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 66
+current: 54, total block: 631
+Cost = 0.000431932, Tag Correct(%) = 1
+current: 154, total block: 631
+Cost = 5.29223e-06, Tag Correct(%) = 1
+current: 254, total block: 631
+Cost = 2.36221e-05, Tag Correct(%) = 1
+current: 354, total block: 631
+Cost = 0.000205566, Tag Correct(%) = 1
+current: 454, total block: 631
+Cost = 1.77892e-07, Tag Correct(%) = 1
+current: 554, total block: 631
+Cost = 0.000363477, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 67
+current: 23, total block: 631
+Cost = 1.82391e-05, Tag Correct(%) = 1
+current: 123, total block: 631
+Cost = 3.3217e-05, Tag Correct(%) = 1
+current: 223, total block: 631
+Cost = 0.000513741, Tag Correct(%) = 1
+current: 323, total block: 631
+Cost = 0.00017362, Tag Correct(%) = 1
+current: 423, total block: 631
+Cost = 0.00153472, Tag Correct(%) = 1
+current: 523, total block: 631
+Cost = 0.000202466, Tag Correct(%) = 1
+current: 623, total block: 631
+Cost = 0.000669977, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 68
+current: 92, total block: 631
+Cost = 0.000381093, Tag Correct(%) = 1
+current: 192, total block: 631
+Cost = 0.000153386, Tag Correct(%) = 1
+current: 292, total block: 631
+Cost = 0.000197051, Tag Correct(%) = 1
+current: 392, total block: 631
+Cost = 1.19507e-06, Tag Correct(%) = 1
+current: 492, total block: 631
+Cost = 0.00120797, Tag Correct(%) = 1
+current: 592, total block: 631
+Cost = 0.000171039, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 69
+current: 61, total block: 631
+Cost = 2.40571e-06, Tag Correct(%) = 1
+current: 161, total block: 631
+Cost = 0.000370843, Tag Correct(%) = 1
+current: 261, total block: 631
+Cost = 0.000367678, Tag Correct(%) = 1
+current: 361, total block: 631
+Cost = 4.15158e-07, Tag Correct(%) = 1
+current: 461, total block: 631
+Cost = 2.79158e-06, Tag Correct(%) = 1
+current: 561, total block: 631
+Cost = 1.99563e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 70
+current: 30, total block: 631
+Cost = 0.000292903, Tag Correct(%) = 1
+current: 130, total block: 631
+Cost = 0.000146211, Tag Correct(%) = 1
+current: 230, total block: 631
+Cost = 0.000674739, Tag Correct(%) = 1
+current: 330, total block: 631
+Cost = 0.000190401, Tag Correct(%) = 1
+current: 430, total block: 631
+Cost = 0.000600138, Tag Correct(%) = 1
+current: 530, total block: 631
+Cost = 0.000107483, Tag Correct(%) = 1
+current: 630, total block: 631
+Cost = 4.07936e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 71
+current: 99, total block: 631
+Cost = 4.68871e-05, Tag Correct(%) = 1
+current: 199, total block: 631
+Cost = 3.9161e-05, Tag Correct(%) = 1
+current: 299, total block: 631
+Cost = 7.23734e-05, Tag Correct(%) = 1
+current: 399, total block: 631
+Cost = 0.00010499, Tag Correct(%) = 1
+current: 499, total block: 631
+Cost = 5.71579e-05, Tag Correct(%) = 1
+current: 599, total block: 631
+Cost = 3.02772e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 72
+current: 68, total block: 631
+Cost = 1.90176e-05, Tag Correct(%) = 1
+current: 168, total block: 631
+Cost = 0.000986268, Tag Correct(%) = 1
+current: 268, total block: 631
+Cost = 1.00922e-07, Tag Correct(%) = 1
+current: 368, total block: 631
+Cost = 0.000681851, Tag Correct(%) = 1
+current: 468, total block: 631
+Cost = 1.85325e-05, Tag Correct(%) = 1
+current: 568, total block: 631
+Cost = 8.67378e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 73
+current: 37, total block: 631
+Cost = 9.87844e-08, Tag Correct(%) = 1
+current: 137, total block: 631
+Cost = 4.42141e-07, Tag Correct(%) = 1
+current: 237, total block: 631
+Cost = 2.4828e-05, Tag Correct(%) = 1
+current: 337, total block: 631
+Cost = 7.94858e-05, Tag Correct(%) = 1
+current: 437, total block: 631
+Cost = 1.69372e-05, Tag Correct(%) = 1
+current: 537, total block: 631
+Cost = 0.00140229, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 74
+current: 6, total block: 631
+Cost = 0.000179281, Tag Correct(%) = 1
+current: 106, total block: 631
+Cost = 0.000133334, Tag Correct(%) = 1
+current: 206, total block: 631
+Cost = 0.00107293, Tag Correct(%) = 1
+current: 306, total block: 631
+Cost = 6.94075e-05, Tag Correct(%) = 1
+current: 406, total block: 631
+Cost = 3.40785e-05, Tag Correct(%) = 1
+current: 506, total block: 631
+Cost = 0.000128064, Tag Correct(%) = 1
+current: 606, total block: 631
+Cost = 0.000532341, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 75
+current: 75, total block: 631
+Cost = 2.49165e-06, Tag Correct(%) = 1
+current: 175, total block: 631
+Cost = 0.00200459, Tag Correct(%) = 1
+current: 275, total block: 631
+Cost = 0.00566767, Tag Correct(%) = 1
+current: 375, total block: 631
+Cost = 4.33006e-05, Tag Correct(%) = 1
+current: 475, total block: 631
+Cost = 8.19156e-06, Tag Correct(%) = 1
+current: 575, total block: 631
+Cost = 6.30014e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 76
+current: 44, total block: 631
+Cost = 5.87487e-06, Tag Correct(%) = 1
+current: 144, total block: 631
+Cost = 0.000164145, Tag Correct(%) = 1
+current: 244, total block: 631
+Cost = 0.00109479, Tag Correct(%) = 1
+current: 344, total block: 631
+Cost = 1.89792e-05, Tag Correct(%) = 1
+current: 444, total block: 631
+Cost = 0.000600182, Tag Correct(%) = 1
+current: 544, total block: 631
+Cost = 0.000531361, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 77
+current: 13, total block: 631
+Cost = 3.33808e-06, Tag Correct(%) = 1
+current: 113, total block: 631
+Cost = 6.39707e-05, Tag Correct(%) = 1
+current: 213, total block: 631
+Cost = 0.000978623, Tag Correct(%) = 1
+current: 313, total block: 631
+Cost = 0.00200482, Tag Correct(%) = 1
+current: 413, total block: 631
+Cost = 2.7155e-05, Tag Correct(%) = 1
+current: 513, total block: 631
+Cost = 0.000364736, Tag Correct(%) = 1
+current: 613, total block: 631
+Cost = 3.24452e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 78
+current: 82, total block: 631
+Cost = 0.000122551, Tag Correct(%) = 1
+current: 182, total block: 631
+Cost = 0.000316689, Tag Correct(%) = 1
+current: 282, total block: 631
+Cost = 0.000795011, Tag Correct(%) = 1
+current: 382, total block: 631
+Cost = 0.000311136, Tag Correct(%) = 1
+current: 482, total block: 631
+Cost = 0.000906447, Tag Correct(%) = 1
+current: 582, total block: 631
+Cost = 0.00056514, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 79
+current: 51, total block: 631
+Cost = 9.84713e-05, Tag Correct(%) = 1
+current: 151, total block: 631
+Cost = 0.000191399, Tag Correct(%) = 1
+current: 251, total block: 631
+Cost = 0.00073205, Tag Correct(%) = 1
+current: 351, total block: 631
+Cost = 0.00030882, Tag Correct(%) = 1
+current: 451, total block: 631
+Cost = 0.000359126, Tag Correct(%) = 1
+current: 551, total block: 631
+Cost = 0.000369481, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 80
+current: 20, total block: 631
+Cost = 6.35662e-05, Tag Correct(%) = 1
+current: 120, total block: 631
+Cost = 0.00028476, Tag Correct(%) = 1
+current: 220, total block: 631
+Cost = 0.000140773, Tag Correct(%) = 1
+current: 320, total block: 631
+Cost = 6.7404e-06, Tag Correct(%) = 1
+current: 420, total block: 631
+Cost = 0.000183175, Tag Correct(%) = 1
+current: 520, total block: 631
+Cost = 1.40099e-05, Tag Correct(%) = 1
+current: 620, total block: 631
+Cost = 4.01344e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 81
+current: 89, total block: 631
+Cost = 0.00686361, Tag Correct(%) = 1
+current: 189, total block: 631
+Cost = 1.66294e-05, Tag Correct(%) = 1
+current: 289, total block: 631
+Cost = 0.000816759, Tag Correct(%) = 1
+current: 389, total block: 631
+Cost = 3.57579e-08, Tag Correct(%) = 1
+current: 489, total block: 631
+Cost = 0.000301234, Tag Correct(%) = 1
+current: 589, total block: 631
+Cost = 1.28132e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 82
+current: 58, total block: 631
+Cost = 0.000301084, Tag Correct(%) = 1
+current: 158, total block: 631
+Cost = 3.37143e-05, Tag Correct(%) = 1
+current: 258, total block: 631
+Cost = 1.62571e-05, Tag Correct(%) = 1
+current: 358, total block: 631
+Cost = 0.000363984, Tag Correct(%) = 1
+current: 458, total block: 631
+Cost = 0.00071967, Tag Correct(%) = 1
+current: 558, total block: 631
+Cost = 8.24662e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 83
+current: 27, total block: 631
+Cost = 7.02749e-06, Tag Correct(%) = 1
+current: 127, total block: 631
+Cost = 2.79694e-06, Tag Correct(%) = 1
+current: 227, total block: 631
+Cost = 0.000201898, Tag Correct(%) = 1
+current: 327, total block: 631
+Cost = 4.31922e-05, Tag Correct(%) = 1
+current: 427, total block: 631
+Cost = 6.90895e-06, Tag Correct(%) = 1
+current: 527, total block: 631
+Cost = 1.53085e-05, Tag Correct(%) = 1
+current: 627, total block: 631
+Cost = 0.000868253, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 84
+current: 96, total block: 631
+Cost = 0.00128957, Tag Correct(%) = 1
+current: 196, total block: 631
+Cost = 2.08607e-06, Tag Correct(%) = 1
+current: 296, total block: 631
+Cost = 0.00237929, Tag Correct(%) = 1
+current: 396, total block: 631
+Cost = 1.06119e-07, Tag Correct(%) = 1
+current: 496, total block: 631
+Cost = 9.96501e-05, Tag Correct(%) = 1
+current: 596, total block: 631
+Cost = 0.000506338, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 85
+current: 65, total block: 631
+Cost = 0.000246409, Tag Correct(%) = 1
+current: 165, total block: 631
+Cost = 0.00029609, Tag Correct(%) = 1
+current: 265, total block: 631
+Cost = 8.435e-05, Tag Correct(%) = 1
+current: 365, total block: 631
+Cost = 0.000102798, Tag Correct(%) = 1
+current: 465, total block: 631
+Cost = 0.000218062, Tag Correct(%) = 1
+current: 565, total block: 631
+Cost = 0.000177152, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 86
+current: 34, total block: 631
+Cost = 0.00031995, Tag Correct(%) = 1
+current: 134, total block: 631
+Cost = 5.53247e-05, Tag Correct(%) = 1
+current: 234, total block: 631
+Cost = 3.59102e-06, Tag Correct(%) = 1
+current: 334, total block: 631
+Cost = 4.31549e-05, Tag Correct(%) = 1
+current: 434, total block: 631
+Cost = 0.000382018, Tag Correct(%) = 1
+current: 534, total block: 631
+Cost = 1.98724e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 87
+current: 3, total block: 631
+Cost = 0.000557796, Tag Correct(%) = 1
+current: 103, total block: 631
+Cost = 0.00157155, Tag Correct(%) = 1
+current: 203, total block: 631
+Cost = 0.000482007, Tag Correct(%) = 1
+current: 303, total block: 631
+Cost = 6.0252e-06, Tag Correct(%) = 1
+current: 403, total block: 631
+Cost = 0.000184329, Tag Correct(%) = 1
+current: 503, total block: 631
+Cost = 0.00013298, Tag Correct(%) = 1
+current: 603, total block: 631
+Cost = 0.00166936, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 88
+current: 72, total block: 631
+Cost = 0.000543205, Tag Correct(%) = 1
+current: 172, total block: 631
+Cost = 5.14835e-05, Tag Correct(%) = 1
+current: 272, total block: 631
+Cost = 5.43403e-05, Tag Correct(%) = 1
+current: 372, total block: 631
+Cost = 9.56884e-06, Tag Correct(%) = 1
+current: 472, total block: 631
+Cost = 0.000716152, Tag Correct(%) = 1
+current: 572, total block: 631
+Cost = 2.96808e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 89
+current: 41, total block: 631
+Cost = 4.65528e-06, Tag Correct(%) = 1
+current: 141, total block: 631
+Cost = 0.000562233, Tag Correct(%) = 1
+current: 241, total block: 631
+Cost = 0.000713124, Tag Correct(%) = 1
+current: 341, total block: 631
+Cost = 6.17215e-06, Tag Correct(%) = 1
+current: 441, total block: 631
+Cost = 1.6644e-05, Tag Correct(%) = 1
+current: 541, total block: 631
+Cost = 0.00556821, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 90
+current: 10, total block: 631
+Cost = 0.000904491, Tag Correct(%) = 1
+current: 110, total block: 631
+Cost = 1.06344e-06, Tag Correct(%) = 1
+current: 210, total block: 631
+Cost = 9.97556e-05, Tag Correct(%) = 1
+current: 310, total block: 631
+Cost = 1.69755e-05, Tag Correct(%) = 1
+current: 410, total block: 631
+Cost = 0.000843637, Tag Correct(%) = 1
+current: 510, total block: 631
+Cost = 0.000245751, Tag Correct(%) = 1
+current: 610, total block: 631
+Cost = 0.000375282, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 91
+current: 79, total block: 631
+Cost = 9.75835e-05, Tag Correct(%) = 1
+current: 179, total block: 631
+Cost = 4.33608e-05, Tag Correct(%) = 1
+current: 279, total block: 631
+Cost = 1.52201e-05, Tag Correct(%) = 1
+current: 379, total block: 631
+Cost = 1.46151e-05, Tag Correct(%) = 1
+current: 479, total block: 631
+Cost = 2.80331e-06, Tag Correct(%) = 1
+current: 579, total block: 631
+Cost = 0.000125621, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 92
+current: 48, total block: 631
+Cost = 3.33018e-05, Tag Correct(%) = 1
+current: 148, total block: 631
+Cost = 5.71666e-06, Tag Correct(%) = 1
+current: 248, total block: 631
+Cost = 2.80169e-06, Tag Correct(%) = 1
+current: 348, total block: 631
+Cost = 0.000957379, Tag Correct(%) = 1
+current: 448, total block: 631
+Cost = 0.000110381, Tag Correct(%) = 1
+current: 548, total block: 631
+Cost = 0.000820813, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 93
+current: 17, total block: 631
+Cost = 0.000297345, Tag Correct(%) = 1
+current: 117, total block: 631
+Cost = 2.81552e-07, Tag Correct(%) = 1
+current: 217, total block: 631
+Cost = 5.18038e-05, Tag Correct(%) = 1
+current: 317, total block: 631
+Cost = 0.000134152, Tag Correct(%) = 1
+current: 417, total block: 631
+Cost = 1.76513e-05, Tag Correct(%) = 1
+current: 517, total block: 631
+Cost = 0.00108563, Tag Correct(%) = 1
+current: 617, total block: 631
+Cost = 0.000160576, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 94
+current: 86, total block: 631
+Cost = 0.000199954, Tag Correct(%) = 1
+current: 186, total block: 631
+Cost = 2.90283e-06, Tag Correct(%) = 1
+current: 286, total block: 631
+Cost = 2.08543e-05, Tag Correct(%) = 1
+current: 386, total block: 631
+Cost = 2.69611e-05, Tag Correct(%) = 1
+current: 486, total block: 631
+Cost = 0.000275047, Tag Correct(%) = 1
+current: 586, total block: 631
+Cost = 0.000931612, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 95
+current: 55, total block: 631
+Cost = 0.000103987, Tag Correct(%) = 1
+current: 155, total block: 631
+Cost = 0.002286, Tag Correct(%) = 1
+current: 255, total block: 631
+Cost = 0.00153648, Tag Correct(%) = 1
+current: 355, total block: 631
+Cost = 0.000252168, Tag Correct(%) = 1
+current: 455, total block: 631
+Cost = 0.000131301, Tag Correct(%) = 1
+current: 555, total block: 631
+Cost = 0.000884187, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 96
+current: 24, total block: 631
+Cost = 0.0013983, Tag Correct(%) = 1
+current: 124, total block: 631
+Cost = 7.40452e-05, Tag Correct(%) = 1
+current: 224, total block: 631
+Cost = 0.000203027, Tag Correct(%) = 1
+current: 324, total block: 631
+Cost = 3.3554e-05, Tag Correct(%) = 1
+current: 424, total block: 631
+Cost = 3.50395e-05, Tag Correct(%) = 1
+current: 524, total block: 631
+Cost = 1.2568e-05, Tag Correct(%) = 1
+current: 624, total block: 631
+Cost = 1.17862e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 97
+current: 93, total block: 631
+Cost = 2.01051e-05, Tag Correct(%) = 1
+current: 193, total block: 631
+Cost = 0.00548939, Tag Correct(%) = 1
+current: 293, total block: 631
+Cost = 0.000680407, Tag Correct(%) = 1
+current: 393, total block: 631
+Cost = 0.000651187, Tag Correct(%) = 1
+current: 493, total block: 631
+Cost = 0.000243693, Tag Correct(%) = 1
+current: 593, total block: 631
+Cost = 4.10738e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 98
+current: 62, total block: 631
+Cost = 0.0004729, Tag Correct(%) = 1
+current: 162, total block: 631
+Cost = 4.63493e-05, Tag Correct(%) = 1
+current: 262, total block: 631
+Cost = 0.000163924, Tag Correct(%) = 1
+current: 362, total block: 631
+Cost = 0.000109531, Tag Correct(%) = 1
+current: 462, total block: 631
+Cost = 8.65013e-06, Tag Correct(%) = 1
+current: 562, total block: 631
+Cost = 5.29258e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 99
+current: 31, total block: 631
+Cost = 9.9534e-05, Tag Correct(%) = 1
+current: 131, total block: 631
+Cost = 6.9034e-06, Tag Correct(%) = 1
+current: 231, total block: 631
+Cost = 9.31956e-07, Tag Correct(%) = 1
+current: 331, total block: 631
+Cost = 2.04416e-06, Tag Correct(%) = 1
+current: 431, total block: 631
+Cost = 5.20043e-06, Tag Correct(%) = 1
+current: 531, total block: 631
+Cost = 0.000123772, Tag Correct(%) = 1
+current: 631, total block: 631
+Cost = 0.00120878, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 100
+current: 100, total block: 631
+Cost = 0.000219858, Tag Correct(%) = 1
+current: 200, total block: 631
+Cost = 9.78649e-05, Tag Correct(%) = 1
+current: 300, total block: 631
+Cost = 3.26453e-05, Tag Correct(%) = 1
+current: 400, total block: 631
+Cost = 4.30476e-06, Tag Correct(%) = 1
+current: 500, total block: 631
+Cost = 6.98279e-05, Tag Correct(%) = 1
+current: 600, total block: 631
+Cost = 0.000152503, Tag Correct(%) = 1
+dev:
+Accuracy:	P=495/600=0.825
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 101
+current: 69, total block: 631
+Cost = 0.000582727, Tag Correct(%) = 1
+current: 169, total block: 631
+Cost = 0.000453456, Tag Correct(%) = 1
+current: 269, total block: 631
+Cost = 0.00026088, Tag Correct(%) = 1
+current: 369, total block: 631
+Cost = 0.00268545, Tag Correct(%) = 1
+current: 469, total block: 631
+Cost = 0.000547953, Tag Correct(%) = 1
+current: 569, total block: 631
+Cost = 2.82868e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 102
+current: 38, total block: 631
+Cost = 4.50357e-05, Tag Correct(%) = 1
+current: 138, total block: 631
+Cost = 0.000558272, Tag Correct(%) = 1
+current: 238, total block: 631
+Cost = 0.000710044, Tag Correct(%) = 1
+current: 338, total block: 631
+Cost = 0.000801462, Tag Correct(%) = 1
+current: 438, total block: 631
+Cost = 1.10022e-06, Tag Correct(%) = 1
+current: 538, total block: 631
+Cost = 2.10145e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 103
+current: 7, total block: 631
+Cost = 4.97744e-06, Tag Correct(%) = 1
+current: 107, total block: 631
+Cost = 0.000579106, Tag Correct(%) = 1
+current: 207, total block: 631
+Cost = 0.000458227, Tag Correct(%) = 1
+current: 307, total block: 631
+Cost = 8.36325e-07, Tag Correct(%) = 1
+current: 407, total block: 631
+Cost = 0.000203868, Tag Correct(%) = 1
+current: 507, total block: 631
+Cost = 0.000121941, Tag Correct(%) = 1
+current: 607, total block: 631
+Cost = 6.35878e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 104
+current: 76, total block: 631
+Cost = 0.000351498, Tag Correct(%) = 1
+current: 176, total block: 631
+Cost = 2.5899e-06, Tag Correct(%) = 1
+current: 276, total block: 631
+Cost = 1.34045e-05, Tag Correct(%) = 1
+current: 376, total block: 631
+Cost = 1.16204e-05, Tag Correct(%) = 1
+current: 476, total block: 631
+Cost = 0.000754599, Tag Correct(%) = 1
+current: 576, total block: 631
+Cost = 9.40777e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 105
+current: 45, total block: 631
+Cost = 7.67845e-05, Tag Correct(%) = 1
+current: 145, total block: 631
+Cost = 0.00034536, Tag Correct(%) = 1
+current: 245, total block: 631
+Cost = 0.000410846, Tag Correct(%) = 1
+current: 345, total block: 631
+Cost = 5.92683e-05, Tag Correct(%) = 1
+current: 445, total block: 631
+Cost = 7.5998e-05, Tag Correct(%) = 1
+current: 545, total block: 631
+Cost = 6.08252e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 106
+current: 14, total block: 631
+Cost = 3.69981e-06, Tag Correct(%) = 1
+current: 114, total block: 631
+Cost = 0.000202353, Tag Correct(%) = 1
+current: 214, total block: 631
+Cost = 2.39444e-06, Tag Correct(%) = 1
+current: 314, total block: 631
+Cost = 0.000248085, Tag Correct(%) = 1
+current: 414, total block: 631
+Cost = 0.000162446, Tag Correct(%) = 1
+current: 514, total block: 631
+Cost = 0.00028507, Tag Correct(%) = 1
+current: 614, total block: 631
+Cost = 1.19365e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 107
+current: 83, total block: 631
+Cost = 7.70368e-06, Tag Correct(%) = 1
+current: 183, total block: 631
+Cost = 0.000158175, Tag Correct(%) = 1
+current: 283, total block: 631
+Cost = 4.20444e-05, Tag Correct(%) = 1
+current: 383, total block: 631
+Cost = 0.000201506, Tag Correct(%) = 1
+current: 483, total block: 631
+Cost = 0.000174502, Tag Correct(%) = 1
+current: 583, total block: 631
+Cost = 0.000956059, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 108
+current: 52, total block: 631
+Cost = 2.11795e-05, Tag Correct(%) = 1
+current: 152, total block: 631
+Cost = 6.04315e-05, Tag Correct(%) = 1
+current: 252, total block: 631
+Cost = 2.12392e-07, Tag Correct(%) = 1
+current: 352, total block: 631
+Cost = 0.000438368, Tag Correct(%) = 1
+current: 452, total block: 631
+Cost = 0.000135142, Tag Correct(%) = 1
+current: 552, total block: 631
+Cost = 0.000202013, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 109
+current: 21, total block: 631
+Cost = 0.000157642, Tag Correct(%) = 1
+current: 121, total block: 631
+Cost = 2.51808e-05, Tag Correct(%) = 1
+current: 221, total block: 631
+Cost = 6.89061e-06, Tag Correct(%) = 1
+current: 321, total block: 631
+Cost = 0.00127101, Tag Correct(%) = 1
+current: 421, total block: 631
+Cost = 0.000199792, Tag Correct(%) = 1
+current: 521, total block: 631
+Cost = 6.09103e-05, Tag Correct(%) = 1
+current: 621, total block: 631
+Cost = 0.00194538, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 110
+current: 90, total block: 631
+Cost = 4.64802e-05, Tag Correct(%) = 1
+current: 190, total block: 631
+Cost = 4.06832e-05, Tag Correct(%) = 1
+current: 290, total block: 631
+Cost = 0.000378775, Tag Correct(%) = 1
+current: 390, total block: 631
+Cost = 1.34901e-06, Tag Correct(%) = 1
+current: 490, total block: 631
+Cost = 7.57667e-05, Tag Correct(%) = 1
+current: 590, total block: 631
+Cost = 0.000166668, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 111
+current: 59, total block: 631
+Cost = 0.000402849, Tag Correct(%) = 1
+current: 159, total block: 631
+Cost = 6.00971e-08, Tag Correct(%) = 1
+current: 259, total block: 631
+Cost = 8.68598e-06, Tag Correct(%) = 1
+current: 359, total block: 631
+Cost = 7.58429e-05, Tag Correct(%) = 1
+current: 459, total block: 631
+Cost = 0.000102827, Tag Correct(%) = 1
+current: 559, total block: 631
+Cost = 0.000225417, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 112
+current: 28, total block: 631
+Cost = 0.00366975, Tag Correct(%) = 1
+current: 128, total block: 631
+Cost = 1.65317e-05, Tag Correct(%) = 1
+current: 228, total block: 631
+Cost = 0.000381426, Tag Correct(%) = 1
+current: 328, total block: 631
+Cost = 3.63376e-05, Tag Correct(%) = 1
+current: 428, total block: 631
+Cost = 4.03968e-05, Tag Correct(%) = 1
+current: 528, total block: 631
+Cost = 2.10003e-06, Tag Correct(%) = 1
+current: 628, total block: 631
+Cost = 3.85891e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 113
+current: 97, total block: 631
+Cost = 8.40658e-05, Tag Correct(%) = 1
+current: 197, total block: 631
+Cost = 4.43876e-05, Tag Correct(%) = 1
+current: 297, total block: 631
+Cost = 0.00011016, Tag Correct(%) = 1
+current: 397, total block: 631
+Cost = 0.000654932, Tag Correct(%) = 1
+current: 497, total block: 631
+Cost = 2.20071e-05, Tag Correct(%) = 1
+current: 597, total block: 631
+Cost = 0.000102328, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 114
+current: 66, total block: 631
+Cost = 7.01812e-07, Tag Correct(%) = 1
+current: 166, total block: 631
+Cost = 0.00305809, Tag Correct(%) = 1
+current: 266, total block: 631
+Cost = 0.000292461, Tag Correct(%) = 1
+current: 366, total block: 631
+Cost = 0.000522165, Tag Correct(%) = 1
+current: 466, total block: 631
+Cost = 1.82666e-05, Tag Correct(%) = 1
+current: 566, total block: 631
+Cost = 0.00017954, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 115
+current: 35, total block: 631
+Cost = 2.89159e-05, Tag Correct(%) = 1
+current: 135, total block: 631
+Cost = 0.000357945, Tag Correct(%) = 1
+current: 235, total block: 631
+Cost = 0.000587797, Tag Correct(%) = 1
+current: 335, total block: 631
+Cost = 1.59081e-05, Tag Correct(%) = 1
+current: 435, total block: 631
+Cost = 1.9544e-06, Tag Correct(%) = 1
+current: 535, total block: 631
+Cost = 9.99824e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 116
+current: 4, total block: 631
+Cost = 0.000146181, Tag Correct(%) = 1
+current: 104, total block: 631
+Cost = 0.000810295, Tag Correct(%) = 1
+current: 204, total block: 631
+Cost = 2.05653e-05, Tag Correct(%) = 1
+current: 304, total block: 631
+Cost = 1.0889e-05, Tag Correct(%) = 1
+current: 404, total block: 631
+Cost = 0.000403181, Tag Correct(%) = 1
+current: 504, total block: 631
+Cost = 0.000102482, Tag Correct(%) = 1
+current: 604, total block: 631
+Cost = 1.7557e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 117
+current: 73, total block: 631
+Cost = 0.00350048, Tag Correct(%) = 1
+current: 173, total block: 631
+Cost = 1.56564e-05, Tag Correct(%) = 1
+current: 273, total block: 631
+Cost = 0.000306833, Tag Correct(%) = 1
+current: 373, total block: 631
+Cost = 0.000762754, Tag Correct(%) = 1
+current: 473, total block: 631
+Cost = 1.90306e-06, Tag Correct(%) = 1
+current: 573, total block: 631
+Cost = 0.000859247, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 118
+current: 42, total block: 631
+Cost = 9.19762e-05, Tag Correct(%) = 1
+current: 142, total block: 631
+Cost = 1.34833e-06, Tag Correct(%) = 1
+current: 242, total block: 631
+Cost = 0.000236385, Tag Correct(%) = 1
+current: 342, total block: 631
+Cost = 0.000490243, Tag Correct(%) = 1
+current: 442, total block: 631
+Cost = 0.00014949, Tag Correct(%) = 1
+current: 542, total block: 631
+Cost = 2.05923e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 119
+current: 11, total block: 631
+Cost = 4.03242e-07, Tag Correct(%) = 1
+current: 111, total block: 631
+Cost = 0.000148461, Tag Correct(%) = 1
+current: 211, total block: 631
+Cost = 8.62611e-05, Tag Correct(%) = 1
+current: 311, total block: 631
+Cost = 3.56065e-05, Tag Correct(%) = 1
+current: 411, total block: 631
+Cost = 0.000222087, Tag Correct(%) = 1
+current: 511, total block: 631
+Cost = 0.000114442, Tag Correct(%) = 1
+current: 611, total block: 631
+Cost = 0.00176038, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 120
+current: 80, total block: 631
+Cost = 2.02978e-05, Tag Correct(%) = 1
+current: 180, total block: 631
+Cost = 6.00406e-07, Tag Correct(%) = 1
+current: 280, total block: 631
+Cost = 0.00129296, Tag Correct(%) = 1
+current: 380, total block: 631
+Cost = 3.82958e-06, Tag Correct(%) = 1
+current: 480, total block: 631
+Cost = 0.000373715, Tag Correct(%) = 1
+current: 580, total block: 631
+Cost = 0.000136807, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 121
+current: 49, total block: 631
+Cost = 0.00319328, Tag Correct(%) = 1
+current: 149, total block: 631
+Cost = 9.04921e-05, Tag Correct(%) = 1
+current: 249, total block: 631
+Cost = 1.18896e-05, Tag Correct(%) = 1
+current: 349, total block: 631
+Cost = 0.000239906, Tag Correct(%) = 1
+current: 449, total block: 631
+Cost = 2.42017e-05, Tag Correct(%) = 1
+current: 549, total block: 631
+Cost = 0.00208235, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 122
+current: 18, total block: 631
+Cost = 0.000144585, Tag Correct(%) = 1
+current: 118, total block: 631
+Cost = 0.000463166, Tag Correct(%) = 1
+current: 218, total block: 631
+Cost = 6.23658e-07, Tag Correct(%) = 1
+current: 318, total block: 631
+Cost = 2.28109e-05, Tag Correct(%) = 1
+current: 418, total block: 631
+Cost = 5.10231e-06, Tag Correct(%) = 1
+current: 518, total block: 631
+Cost = 1.98241e-05, Tag Correct(%) = 1
+current: 618, total block: 631
+Cost = 2.90282e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 123
+current: 87, total block: 631
+Cost = 0.000807629, Tag Correct(%) = 1
+current: 187, total block: 631
+Cost = 0.000144289, Tag Correct(%) = 1
+current: 287, total block: 631
+Cost = 6.58584e-06, Tag Correct(%) = 1
+current: 387, total block: 631
+Cost = 1.2377e-06, Tag Correct(%) = 1
+current: 487, total block: 631
+Cost = 0.00102987, Tag Correct(%) = 1
+current: 587, total block: 631
+Cost = 1.18789e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 124
+current: 56, total block: 631
+Cost = 0.00014117, Tag Correct(%) = 1
+current: 156, total block: 631
+Cost = 7.73782e-05, Tag Correct(%) = 1
+current: 256, total block: 631
+Cost = 4.23607e-05, Tag Correct(%) = 1
+current: 356, total block: 631
+Cost = 0.000301464, Tag Correct(%) = 1
+current: 456, total block: 631
+Cost = 7.68662e-05, Tag Correct(%) = 1
+current: 556, total block: 631
+Cost = 0.000676283, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 125
+current: 25, total block: 631
+Cost = 7.88512e-06, Tag Correct(%) = 1
+current: 125, total block: 631
+Cost = 7.183e-05, Tag Correct(%) = 1
+current: 225, total block: 631
+Cost = 0.000217847, Tag Correct(%) = 1
+current: 325, total block: 631
+Cost = 2.43201e-05, Tag Correct(%) = 1
+current: 425, total block: 631
+Cost = 1.74473e-05, Tag Correct(%) = 1
+current: 525, total block: 631
+Cost = 5.34852e-06, Tag Correct(%) = 1
+current: 625, total block: 631
+Cost = 7.55437e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 126
+current: 94, total block: 631
+Cost = 9.3627e-05, Tag Correct(%) = 1
+current: 194, total block: 631
+Cost = 1.02749e-05, Tag Correct(%) = 1
+current: 294, total block: 631
+Cost = 0.000228534, Tag Correct(%) = 1
+current: 394, total block: 631
+Cost = 0.000429549, Tag Correct(%) = 1
+current: 494, total block: 631
+Cost = 3.02502e-05, Tag Correct(%) = 1
+current: 594, total block: 631
+Cost = 9.15149e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 127
+current: 63, total block: 631
+Cost = 0.000307442, Tag Correct(%) = 1
+current: 163, total block: 631
+Cost = 0.000546145, Tag Correct(%) = 1
+current: 263, total block: 631
+Cost = 2.38673e-05, Tag Correct(%) = 1
+current: 363, total block: 631
+Cost = 0.000204523, Tag Correct(%) = 1
+current: 463, total block: 631
+Cost = 0.00111382, Tag Correct(%) = 1
+current: 563, total block: 631
+Cost = 0.000200995, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 128
+current: 32, total block: 631
+Cost = 0.000737211, Tag Correct(%) = 1
+current: 132, total block: 631
+Cost = 3.38451e-05, Tag Correct(%) = 1
+current: 232, total block: 631
+Cost = 6.00008e-06, Tag Correct(%) = 1
+current: 332, total block: 631
+Cost = 7.12533e-05, Tag Correct(%) = 1
+current: 432, total block: 631
+Cost = 2.87691e-06, Tag Correct(%) = 1
+current: 532, total block: 631
+Cost = 0.00109304, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 129
+current: 1, total block: 631
+Cost = 0.00038795, Tag Correct(%) = 1
+current: 101, total block: 631
+Cost = 1.59784e-06, Tag Correct(%) = 1
+current: 201, total block: 631
+Cost = 0.000116952, Tag Correct(%) = 1
+current: 301, total block: 631
+Cost = 0.00293459, Tag Correct(%) = 1
+current: 401, total block: 631
+Cost = 0.000131241, Tag Correct(%) = 1
+current: 501, total block: 631
+Cost = 0.000339921, Tag Correct(%) = 1
+current: 601, total block: 631
+Cost = 7.92565e-07, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 130
+current: 70, total block: 631
+Cost = 9.88325e-06, Tag Correct(%) = 1
+current: 170, total block: 631
+Cost = 0.000220619, Tag Correct(%) = 1
+current: 270, total block: 631
+Cost = 7.32034e-07, Tag Correct(%) = 1
+current: 370, total block: 631
+Cost = 9.84496e-06, Tag Correct(%) = 1
+current: 470, total block: 631
+Cost = 1.52675e-05, Tag Correct(%) = 1
+current: 570, total block: 631
+Cost = 6.72351e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 131
+current: 39, total block: 631
+Cost = 0.000136281, Tag Correct(%) = 1
+current: 139, total block: 631
+Cost = 2.40352e-05, Tag Correct(%) = 1
+current: 239, total block: 631
+Cost = 0.000962861, Tag Correct(%) = 1
+current: 339, total block: 631
+Cost = 0.000601839, Tag Correct(%) = 1
+current: 439, total block: 631
+Cost = 6.77742e-06, Tag Correct(%) = 1
+current: 539, total block: 631
+Cost = 0.00189248, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 132
+current: 8, total block: 631
+Cost = 0.000210786, Tag Correct(%) = 1
+current: 108, total block: 631
+Cost = 8.18705e-06, Tag Correct(%) = 1
+current: 208, total block: 631
+Cost = 4.47694e-06, Tag Correct(%) = 1
+current: 308, total block: 631
+Cost = 8.73549e-05, Tag Correct(%) = 1
+current: 408, total block: 631
+Cost = 0.000167518, Tag Correct(%) = 1
+current: 508, total block: 631
+Cost = 0.000171863, Tag Correct(%) = 1
+current: 608, total block: 631
+Cost = 1.60382e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 133
+current: 77, total block: 631
+Cost = 0.000475523, Tag Correct(%) = 1
+current: 177, total block: 631
+Cost = 1.31831e-07, Tag Correct(%) = 1
+current: 277, total block: 631
+Cost = 0.00037451, Tag Correct(%) = 1
+current: 377, total block: 631
+Cost = 6.64953e-05, Tag Correct(%) = 1
+current: 477, total block: 631
+Cost = 6.21708e-05, Tag Correct(%) = 1
+current: 577, total block: 631
+Cost = 6.62015e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 134
+current: 46, total block: 631
+Cost = 2.56911e-07, Tag Correct(%) = 1
+current: 146, total block: 631
+Cost = 1.14172e-05, Tag Correct(%) = 1
+current: 246, total block: 631
+Cost = 0.000184698, Tag Correct(%) = 1
+current: 346, total block: 631
+Cost = 8.59345e-05, Tag Correct(%) = 1
+current: 446, total block: 631
+Cost = 7.04032e-05, Tag Correct(%) = 1
+current: 546, total block: 631
+Cost = 8.38394e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 135
+current: 15, total block: 631
+Cost = 0.000167189, Tag Correct(%) = 1
+current: 115, total block: 631
+Cost = 0.000411189, Tag Correct(%) = 1
+current: 215, total block: 631
+Cost = 1.07727e-06, Tag Correct(%) = 1
+current: 315, total block: 631
+Cost = 0.00100127, Tag Correct(%) = 1
+current: 415, total block: 631
+Cost = 6.32401e-05, Tag Correct(%) = 1
+current: 515, total block: 631
+Cost = 0.000124373, Tag Correct(%) = 1
+current: 615, total block: 631
+Cost = 0.000106476, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 136
+current: 84, total block: 631
+Cost = 9.79862e-05, Tag Correct(%) = 1
+current: 184, total block: 631
+Cost = 6.60726e-05, Tag Correct(%) = 1
+current: 284, total block: 631
+Cost = 6.02042e-05, Tag Correct(%) = 1
+current: 384, total block: 631
+Cost = 1.81795e-05, Tag Correct(%) = 1
+current: 484, total block: 631
+Cost = 2.9913e-05, Tag Correct(%) = 1
+current: 584, total block: 631
+Cost = 9.3776e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 137
+current: 53, total block: 631
+Cost = 7.28784e-05, Tag Correct(%) = 1
+current: 153, total block: 631
+Cost = 0.000251971, Tag Correct(%) = 1
+current: 253, total block: 631
+Cost = 4.62689e-05, Tag Correct(%) = 1
+current: 353, total block: 631
+Cost = 6.12966e-05, Tag Correct(%) = 1
+current: 453, total block: 631
+Cost = 0.000170819, Tag Correct(%) = 1
+current: 553, total block: 631
+Cost = 9.03495e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 138
+current: 22, total block: 631
+Cost = 1.03396e-05, Tag Correct(%) = 1
+current: 122, total block: 631
+Cost = 1.28186e-06, Tag Correct(%) = 1
+current: 222, total block: 631
+Cost = 7.54393e-05, Tag Correct(%) = 1
+current: 322, total block: 631
+Cost = 0.000311775, Tag Correct(%) = 1
+current: 422, total block: 631
+Cost = 4.38644e-05, Tag Correct(%) = 1
+current: 522, total block: 631
+Cost = 0.000172858, Tag Correct(%) = 1
+current: 622, total block: 631
+Cost = 0.000320786, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 139
+current: 91, total block: 631
+Cost = 0.000103123, Tag Correct(%) = 1
+current: 191, total block: 631
+Cost = 8.24083e-05, Tag Correct(%) = 1
+current: 291, total block: 631
+Cost = 1.8796e-07, Tag Correct(%) = 1
+current: 391, total block: 631
+Cost = 2.19967e-05, Tag Correct(%) = 1
+current: 491, total block: 631
+Cost = 1.54826e-05, Tag Correct(%) = 1
+current: 591, total block: 631
+Cost = 0.000450639, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 140
+current: 60, total block: 631
+Cost = 0.000208469, Tag Correct(%) = 1
+current: 160, total block: 631
+Cost = 4.74312e-05, Tag Correct(%) = 1
+current: 260, total block: 631
+Cost = 0.000173422, Tag Correct(%) = 1
+current: 360, total block: 631
+Cost = 1.55143e-06, Tag Correct(%) = 1
+current: 460, total block: 631
+Cost = 1.08464e-06, Tag Correct(%) = 1
+current: 560, total block: 631
+Cost = 7.07759e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 141
+current: 29, total block: 631
+Cost = 1.66779e-06, Tag Correct(%) = 1
+current: 129, total block: 631
+Cost = 4.53543e-05, Tag Correct(%) = 1
+current: 229, total block: 631
+Cost = 0.000119755, Tag Correct(%) = 1
+current: 329, total block: 631
+Cost = 3.11341e-05, Tag Correct(%) = 1
+current: 429, total block: 631
+Cost = 2.84056e-05, Tag Correct(%) = 1
+current: 529, total block: 631
+Cost = 3.97968e-07, Tag Correct(%) = 1
+current: 629, total block: 631
+Cost = 1.3691e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 142
+current: 98, total block: 631
+Cost = 1.7228e-07, Tag Correct(%) = 1
+current: 198, total block: 631
+Cost = 3.379e-06, Tag Correct(%) = 1
+current: 298, total block: 631
+Cost = 2.80799e-05, Tag Correct(%) = 1
+current: 398, total block: 631
+Cost = 1.36026e-05, Tag Correct(%) = 1
+current: 498, total block: 631
+Cost = 7.25901e-05, Tag Correct(%) = 1
+current: 598, total block: 631
+Cost = 7.75589e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 143
+current: 67, total block: 631
+Cost = 7.85051e-06, Tag Correct(%) = 1
+current: 167, total block: 631
+Cost = 6.3369e-06, Tag Correct(%) = 1
+current: 267, total block: 631
+Cost = 7.49028e-06, Tag Correct(%) = 1
+current: 367, total block: 631
+Cost = 3.27481e-05, Tag Correct(%) = 1
+current: 467, total block: 631
+Cost = 6.55305e-05, Tag Correct(%) = 1
+current: 567, total block: 631
+Cost = 0.000310347, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 144
+current: 36, total block: 631
+Cost = 0.000100043, Tag Correct(%) = 1
+current: 136, total block: 631
+Cost = 0.000121544, Tag Correct(%) = 1
+current: 236, total block: 631
+Cost = 1.18689e-05, Tag Correct(%) = 1
+current: 336, total block: 631
+Cost = 6.2461e-05, Tag Correct(%) = 1
+current: 436, total block: 631
+Cost = 1.14323e-07, Tag Correct(%) = 1
+current: 536, total block: 631
+Cost = 4.96042e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 145
+current: 5, total block: 631
+Cost = 0.000486948, Tag Correct(%) = 1
+current: 105, total block: 631
+Cost = 2.27766e-05, Tag Correct(%) = 1
+current: 205, total block: 631
+Cost = 6.09131e-05, Tag Correct(%) = 1
+current: 305, total block: 631
+Cost = 0.000736951, Tag Correct(%) = 1
+current: 405, total block: 631
+Cost = 0.00092215, Tag Correct(%) = 1
+current: 505, total block: 631
+Cost = 3.0784e-07, Tag Correct(%) = 1
+current: 605, total block: 631
+Cost = 0.000896905, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 146
+current: 74, total block: 631
+Cost = 0.000244858, Tag Correct(%) = 1
+current: 174, total block: 631
+Cost = 0.000115167, Tag Correct(%) = 1
+current: 274, total block: 631
+Cost = 4.29192e-05, Tag Correct(%) = 1
+current: 374, total block: 631
+Cost = 0.000100772, Tag Correct(%) = 1
+current: 474, total block: 631
+Cost = 1.11649e-07, Tag Correct(%) = 1
+current: 574, total block: 631
+Cost = 2.10512e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 147
+current: 43, total block: 631
+Cost = 8.05172e-07, Tag Correct(%) = 1
+current: 143, total block: 631
+Cost = 0.000652061, Tag Correct(%) = 1
+current: 243, total block: 631
+Cost = 8.45721e-06, Tag Correct(%) = 1
+current: 343, total block: 631
+Cost = 2.10903e-05, Tag Correct(%) = 1
+current: 443, total block: 631
+Cost = 0.000934258, Tag Correct(%) = 1
+current: 543, total block: 631
+Cost = 4.01246e-08, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 148
+current: 12, total block: 631
+Cost = 0.00192586, Tag Correct(%) = 1
+current: 112, total block: 631
+Cost = 6.03296e-06, Tag Correct(%) = 1
+current: 212, total block: 631
+Cost = 0.000149631, Tag Correct(%) = 1
+current: 312, total block: 631
+Cost = 0.000869551, Tag Correct(%) = 1
+current: 412, total block: 631
+Cost = 0.000229027, Tag Correct(%) = 1
+current: 512, total block: 631
+Cost = 0.000310548, Tag Correct(%) = 1
+current: 612, total block: 631
+Cost = 0.000146273, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 149
+current: 81, total block: 631
+Cost = 8.24536e-05, Tag Correct(%) = 1
+current: 181, total block: 631
+Cost = 5.88254e-05, Tag Correct(%) = 1
+current: 281, total block: 631
+Cost = 5.47277e-06, Tag Correct(%) = 1
+current: 381, total block: 631
+Cost = 0.000185635, Tag Correct(%) = 1
+current: 481, total block: 631
+Cost = 0.000149828, Tag Correct(%) = 1
+current: 581, total block: 631
+Cost = 0.000161007, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 150
+current: 50, total block: 631
+Cost = 9.54519e-05, Tag Correct(%) = 1
+current: 150, total block: 631
+Cost = 1.6241e-05, Tag Correct(%) = 1
+current: 250, total block: 631
+Cost = 0.000262212, Tag Correct(%) = 1
+current: 350, total block: 631
+Cost = 6.82733e-05, Tag Correct(%) = 1
+current: 450, total block: 631
+Cost = 0.00116183, Tag Correct(%) = 1
+current: 550, total block: 631
+Cost = 3.13811e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 151
+current: 19, total block: 631
+Cost = 0.000926063, Tag Correct(%) = 1
+current: 119, total block: 631
+Cost = 1.05962e-07, Tag Correct(%) = 1
+current: 219, total block: 631
+Cost = 0.000156608, Tag Correct(%) = 1
+current: 319, total block: 631
+Cost = 8.25251e-05, Tag Correct(%) = 1
+current: 419, total block: 631
+Cost = 5.3202e-05, Tag Correct(%) = 1
+current: 519, total block: 631
+Cost = 3.11608e-06, Tag Correct(%) = 1
+current: 619, total block: 631
+Cost = 6.94258e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 152
+current: 88, total block: 631
+Cost = 1.57362e-05, Tag Correct(%) = 1
+current: 188, total block: 631
+Cost = 1.89026e-06, Tag Correct(%) = 1
+current: 288, total block: 631
+Cost = 6.9531e-06, Tag Correct(%) = 1
+current: 388, total block: 631
+Cost = 0.000125795, Tag Correct(%) = 1
+current: 488, total block: 631
+Cost = 0.000263871, Tag Correct(%) = 1
+current: 588, total block: 631
+Cost = 0.000124163, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 153
+current: 57, total block: 631
+Cost = 0.000101215, Tag Correct(%) = 1
+current: 157, total block: 631
+Cost = 0.000241272, Tag Correct(%) = 1
+current: 257, total block: 631
+Cost = 9.19748e-05, Tag Correct(%) = 1
+current: 357, total block: 631
+Cost = 1.15326e-05, Tag Correct(%) = 1
+current: 457, total block: 631
+Cost = 1.18524e-06, Tag Correct(%) = 1
+current: 557, total block: 631
+Cost = 0.00186834, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+Exceeds best previous performance of 0.826667. Saving model file..
+##### Iteration 154
+current: 26, total block: 631
+Cost = 0.000258006, Tag Correct(%) = 1
+current: 126, total block: 631
+Cost = 0.000689506, Tag Correct(%) = 1
+current: 226, total block: 631
+Cost = 1.90955e-05, Tag Correct(%) = 1
+current: 326, total block: 631
+Cost = 0.00128845, Tag Correct(%) = 1
+current: 426, total block: 631
+Cost = 3.70087e-05, Tag Correct(%) = 1
+current: 526, total block: 631
+Cost = 2.11625e-06, Tag Correct(%) = 1
+current: 626, total block: 631
+Cost = 1.48173e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 155
+current: 95, total block: 631
+Cost = 6.21853e-07, Tag Correct(%) = 1
+current: 195, total block: 631
+Cost = 1.35347e-06, Tag Correct(%) = 1
+current: 295, total block: 631
+Cost = 0.000347235, Tag Correct(%) = 1
+current: 395, total block: 631
+Cost = 0.000346338, Tag Correct(%) = 1
+current: 495, total block: 631
+Cost = 0.0024831, Tag Correct(%) = 1
+current: 595, total block: 631
+Cost = 5.57734e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 156
+current: 64, total block: 631
+Cost = 9.5218e-06, Tag Correct(%) = 1
+current: 164, total block: 631
+Cost = 2.1849e-06, Tag Correct(%) = 1
+current: 264, total block: 631
+Cost = 6.71163e-06, Tag Correct(%) = 1
+current: 364, total block: 631
+Cost = 2.55502e-07, Tag Correct(%) = 1
+current: 464, total block: 631
+Cost = 6.56121e-06, Tag Correct(%) = 1
+current: 564, total block: 631
+Cost = 0.00010561, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 157
+current: 33, total block: 631
+Cost = 0.000385955, Tag Correct(%) = 1
+current: 133, total block: 631
+Cost = 0.00126318, Tag Correct(%) = 1
+current: 233, total block: 631
+Cost = 0.000666339, Tag Correct(%) = 1
+current: 333, total block: 631
+Cost = 6.52477e-07, Tag Correct(%) = 1
+current: 433, total block: 631
+Cost = 9.23565e-05, Tag Correct(%) = 1
+current: 533, total block: 631
+Cost = 6.11943e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 158
+current: 2, total block: 631
+Cost = 5.70196e-05, Tag Correct(%) = 1
+current: 102, total block: 631
+Cost = 0.000136128, Tag Correct(%) = 1
+current: 202, total block: 631
+Cost = 1.43197e-06, Tag Correct(%) = 1
+current: 302, total block: 631
+Cost = 0.000108915, Tag Correct(%) = 1
+current: 402, total block: 631
+Cost = 0.000222946, Tag Correct(%) = 1
+current: 502, total block: 631
+Cost = 6.01227e-05, Tag Correct(%) = 1
+current: 602, total block: 631
+Cost = 1.45702e-07, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 159
+current: 71, total block: 631
+Cost = 0.000154733, Tag Correct(%) = 1
+current: 171, total block: 631
+Cost = 7.95307e-07, Tag Correct(%) = 1
+current: 271, total block: 631
+Cost = 9.77347e-05, Tag Correct(%) = 1
+current: 371, total block: 631
+Cost = 0.000240881, Tag Correct(%) = 1
+current: 471, total block: 631
+Cost = 0.000340873, Tag Correct(%) = 1
+current: 571, total block: 631
+Cost = 0.000850775, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 160
+current: 40, total block: 631
+Cost = 0.00109479, Tag Correct(%) = 1
+current: 140, total block: 631
+Cost = 0.000188048, Tag Correct(%) = 1
+current: 240, total block: 631
+Cost = 5.13048e-05, Tag Correct(%) = 1
+current: 340, total block: 631
+Cost = 0.00015312, Tag Correct(%) = 1
+current: 440, total block: 631
+Cost = 0.000468677, Tag Correct(%) = 1
+current: 540, total block: 631
+Cost = 0.000212762, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 161
+current: 9, total block: 631
+Cost = 0.000129159, Tag Correct(%) = 1
+current: 109, total block: 631
+Cost = 2.16764e-05, Tag Correct(%) = 1
+current: 209, total block: 631
+Cost = 2.21011e-06, Tag Correct(%) = 1
+current: 309, total block: 631
+Cost = 0.000203197, Tag Correct(%) = 1
+current: 409, total block: 631
+Cost = 7.37885e-05, Tag Correct(%) = 1
+current: 509, total block: 631
+Cost = 8.39826e-07, Tag Correct(%) = 1
+current: 609, total block: 631
+Cost = 0.000552762, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 162
+current: 78, total block: 631
+Cost = 1.70747e-05, Tag Correct(%) = 1
+current: 178, total block: 631
+Cost = 1.47215e-05, Tag Correct(%) = 1
+current: 278, total block: 631
+Cost = 1.1761e-06, Tag Correct(%) = 1
+current: 378, total block: 631
+Cost = 7.23137e-05, Tag Correct(%) = 1
+current: 478, total block: 631
+Cost = 0.000522853, Tag Correct(%) = 1
+current: 578, total block: 631
+Cost = 4.98586e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 163
+current: 47, total block: 631
+Cost = 3.96245e-05, Tag Correct(%) = 1
+current: 147, total block: 631
+Cost = 1.32363e-05, Tag Correct(%) = 1
+current: 247, total block: 631
+Cost = 0.000206728, Tag Correct(%) = 1
+current: 347, total block: 631
+Cost = 5.23981e-05, Tag Correct(%) = 1
+current: 447, total block: 631
+Cost = 1.92785e-06, Tag Correct(%) = 1
+current: 547, total block: 631
+Cost = 9.32457e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 164
+current: 16, total block: 631
+Cost = 2.05652e-05, Tag Correct(%) = 1
+current: 116, total block: 631
+Cost = 3.61692e-06, Tag Correct(%) = 1
+current: 216, total block: 631
+Cost = 7.58246e-07, Tag Correct(%) = 1
+current: 316, total block: 631
+Cost = 0.00060178, Tag Correct(%) = 1
+current: 416, total block: 631
+Cost = 3.30445e-08, Tag Correct(%) = 1
+current: 516, total block: 631
+Cost = 0.000185811, Tag Correct(%) = 1
+current: 616, total block: 631
+Cost = 0.000148538, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 165
+current: 85, total block: 631
+Cost = 6.63601e-05, Tag Correct(%) = 1
+current: 185, total block: 631
+Cost = 6.72744e-05, Tag Correct(%) = 1
+current: 285, total block: 631
+Cost = 0.000816054, Tag Correct(%) = 1
+current: 385, total block: 631
+Cost = 7.37066e-06, Tag Correct(%) = 1
+current: 485, total block: 631
+Cost = 9.83589e-05, Tag Correct(%) = 1
+current: 585, total block: 631
+Cost = 9.82798e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 166
+current: 54, total block: 631
+Cost = 8.62132e-05, Tag Correct(%) = 1
+current: 154, total block: 631
+Cost = 0.000201587, Tag Correct(%) = 1
+current: 254, total block: 631
+Cost = 0.000305, Tag Correct(%) = 1
+current: 354, total block: 631
+Cost = 5.61126e-05, Tag Correct(%) = 1
+current: 454, total block: 631
+Cost = 5.12603e-05, Tag Correct(%) = 1
+current: 554, total block: 631
+Cost = 0.000533117, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 167
+current: 23, total block: 631
+Cost = 6.62266e-05, Tag Correct(%) = 1
+current: 123, total block: 631
+Cost = 0.000250964, Tag Correct(%) = 1
+current: 223, total block: 631
+Cost = 1.06416e-05, Tag Correct(%) = 1
+current: 323, total block: 631
+Cost = 9.04731e-06, Tag Correct(%) = 1
+current: 423, total block: 631
+Cost = 0.000119787, Tag Correct(%) = 1
+current: 523, total block: 631
+Cost = 5.88606e-05, Tag Correct(%) = 1
+current: 623, total block: 631
+Cost = 2.25743e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 168
+current: 92, total block: 631
+Cost = 1.72877e-05, Tag Correct(%) = 1
+current: 192, total block: 631
+Cost = 6.48121e-05, Tag Correct(%) = 1
+current: 292, total block: 631
+Cost = 0.000263869, Tag Correct(%) = 1
+current: 392, total block: 631
+Cost = 0.000103062, Tag Correct(%) = 1
+current: 492, total block: 631
+Cost = 0.000247866, Tag Correct(%) = 1
+current: 592, total block: 631
+Cost = 1.09119e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 169
+current: 61, total block: 631
+Cost = 1.2643e-05, Tag Correct(%) = 1
+current: 161, total block: 631
+Cost = 0.000102194, Tag Correct(%) = 1
+current: 261, total block: 631
+Cost = 3.63674e-05, Tag Correct(%) = 1
+current: 361, total block: 631
+Cost = 8.15259e-05, Tag Correct(%) = 1
+current: 461, total block: 631
+Cost = 5.81611e-07, Tag Correct(%) = 1
+current: 561, total block: 631
+Cost = 0.000454071, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 170
+current: 30, total block: 631
+Cost = 0.000149215, Tag Correct(%) = 1
+current: 130, total block: 631
+Cost = 0.000399013, Tag Correct(%) = 1
+current: 230, total block: 631
+Cost = 0.000101065, Tag Correct(%) = 1
+current: 330, total block: 631
+Cost = 3.78214e-06, Tag Correct(%) = 1
+current: 430, total block: 631
+Cost = 2.68905e-05, Tag Correct(%) = 1
+current: 530, total block: 631
+Cost = 4.83407e-06, Tag Correct(%) = 1
+current: 630, total block: 631
+Cost = 4.95908e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 171
+current: 99, total block: 631
+Cost = 1.7407e-08, Tag Correct(%) = 1
+current: 199, total block: 631
+Cost = 0.000117992, Tag Correct(%) = 1
+current: 299, total block: 631
+Cost = 5.10568e-05, Tag Correct(%) = 1
+current: 399, total block: 631
+Cost = 3.44632e-06, Tag Correct(%) = 1
+current: 499, total block: 631
+Cost = 0.000149285, Tag Correct(%) = 1
+current: 599, total block: 631
+Cost = 4.61512e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 172
+current: 68, total block: 631
+Cost = 0.000139552, Tag Correct(%) = 1
+current: 168, total block: 631
+Cost = 0.000100434, Tag Correct(%) = 1
+current: 268, total block: 631
+Cost = 0.000161967, Tag Correct(%) = 1
+current: 368, total block: 631
+Cost = 1.07306e-05, Tag Correct(%) = 1
+current: 468, total block: 631
+Cost = 0.000203584, Tag Correct(%) = 1
+current: 568, total block: 631
+Cost = 5.13674e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 173
+current: 37, total block: 631
+Cost = 3.31905e-06, Tag Correct(%) = 1
+current: 137, total block: 631
+Cost = 2.45007e-08, Tag Correct(%) = 1
+current: 237, total block: 631
+Cost = 6.69188e-06, Tag Correct(%) = 1
+current: 337, total block: 631
+Cost = 7.87181e-08, Tag Correct(%) = 1
+current: 437, total block: 631
+Cost = 1.16545e-05, Tag Correct(%) = 1
+current: 537, total block: 631
+Cost = 0.000344258, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 174
+current: 6, total block: 631
+Cost = 0.000291404, Tag Correct(%) = 1
+current: 106, total block: 631
+Cost = 1.36126e-05, Tag Correct(%) = 1
+current: 206, total block: 631
+Cost = 3.669e-05, Tag Correct(%) = 1
+current: 306, total block: 631
+Cost = 9.55293e-05, Tag Correct(%) = 1
+current: 406, total block: 631
+Cost = 5.69345e-06, Tag Correct(%) = 1
+current: 506, total block: 631
+Cost = 0.00013757, Tag Correct(%) = 1
+current: 606, total block: 631
+Cost = 0.00015541, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 175
+current: 75, total block: 631
+Cost = 0.000153386, Tag Correct(%) = 1
+current: 175, total block: 631
+Cost = 4.45625e-05, Tag Correct(%) = 1
+current: 275, total block: 631
+Cost = 0.000212913, Tag Correct(%) = 1
+current: 375, total block: 631
+Cost = 0.000235893, Tag Correct(%) = 1
+current: 475, total block: 631
+Cost = 7.59074e-05, Tag Correct(%) = 1
+current: 575, total block: 631
+Cost = 1.74124e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 176
+current: 44, total block: 631
+Cost = 0.000100182, Tag Correct(%) = 1
+current: 144, total block: 631
+Cost = 0.000118729, Tag Correct(%) = 1
+current: 244, total block: 631
+Cost = 1.96798e-06, Tag Correct(%) = 1
+current: 344, total block: 631
+Cost = 1.03226e-05, Tag Correct(%) = 1
+current: 444, total block: 631
+Cost = 4.56809e-05, Tag Correct(%) = 1
+current: 544, total block: 631
+Cost = 0.000156995, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 177
+current: 13, total block: 631
+Cost = 7.49577e-06, Tag Correct(%) = 1
+current: 113, total block: 631
+Cost = 7.69175e-05, Tag Correct(%) = 1
+current: 213, total block: 631
+Cost = 7.38201e-05, Tag Correct(%) = 1
+current: 313, total block: 631
+Cost = 3.29306e-05, Tag Correct(%) = 1
+current: 413, total block: 631
+Cost = 0.000218461, Tag Correct(%) = 1
+current: 513, total block: 631
+Cost = 3.58651e-05, Tag Correct(%) = 1
+current: 613, total block: 631
+Cost = 8.91447e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 178
+current: 82, total block: 631
+Cost = 2.44949e-06, Tag Correct(%) = 1
+current: 182, total block: 631
+Cost = 0.00018064, Tag Correct(%) = 1
+current: 282, total block: 631
+Cost = 1.27083e-05, Tag Correct(%) = 1
+current: 382, total block: 631
+Cost = 2.0457e-06, Tag Correct(%) = 1
+current: 482, total block: 631
+Cost = 0.000306895, Tag Correct(%) = 1
+current: 582, total block: 631
+Cost = 2.04301e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 179
+current: 51, total block: 631
+Cost = 9.23467e-07, Tag Correct(%) = 1
+current: 151, total block: 631
+Cost = 1.47883e-05, Tag Correct(%) = 1
+current: 251, total block: 631
+Cost = 0.000161401, Tag Correct(%) = 1
+current: 351, total block: 631
+Cost = 7.37026e-08, Tag Correct(%) = 1
+current: 451, total block: 631
+Cost = 0.0012967, Tag Correct(%) = 1
+current: 551, total block: 631
+Cost = 7.82144e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 180
+current: 20, total block: 631
+Cost = 4.31331e-05, Tag Correct(%) = 1
+current: 120, total block: 631
+Cost = 1.00161e-05, Tag Correct(%) = 1
+current: 220, total block: 631
+Cost = 0.000458206, Tag Correct(%) = 1
+current: 320, total block: 631
+Cost = 0.000409563, Tag Correct(%) = 1
+current: 420, total block: 631
+Cost = 2.01652e-06, Tag Correct(%) = 1
+current: 520, total block: 631
+Cost = 5.06703e-05, Tag Correct(%) = 1
+current: 620, total block: 631
+Cost = 5.39665e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 181
+current: 89, total block: 631
+Cost = 1.12244e-07, Tag Correct(%) = 1
+current: 189, total block: 631
+Cost = 3.804e-05, Tag Correct(%) = 1
+current: 289, total block: 631
+Cost = 0.000201629, Tag Correct(%) = 1
+current: 389, total block: 631
+Cost = 6.08677e-05, Tag Correct(%) = 1
+current: 489, total block: 631
+Cost = 8.85584e-05, Tag Correct(%) = 1
+current: 589, total block: 631
+Cost = 1.78586e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 182
+current: 58, total block: 631
+Cost = 3.40433e-06, Tag Correct(%) = 1
+current: 158, total block: 631
+Cost = 0.000115147, Tag Correct(%) = 1
+current: 258, total block: 631
+Cost = 9.2693e-06, Tag Correct(%) = 1
+current: 358, total block: 631
+Cost = 2.50499e-06, Tag Correct(%) = 1
+current: 458, total block: 631
+Cost = 0.000564309, Tag Correct(%) = 1
+current: 558, total block: 631
+Cost = 6.64564e-07, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 183
+current: 27, total block: 631
+Cost = 9.4054e-06, Tag Correct(%) = 1
+current: 127, total block: 631
+Cost = 0.000335625, Tag Correct(%) = 1
+current: 227, total block: 631
+Cost = 0.000104819, Tag Correct(%) = 1
+current: 327, total block: 631
+Cost = 3.9484e-05, Tag Correct(%) = 1
+current: 427, total block: 631
+Cost = 4.07872e-06, Tag Correct(%) = 1
+current: 527, total block: 631
+Cost = 0.000322767, Tag Correct(%) = 1
+current: 627, total block: 631
+Cost = 0.000224136, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 184
+current: 96, total block: 631
+Cost = 9.84532e-06, Tag Correct(%) = 1
+current: 196, total block: 631
+Cost = 8.36001e-05, Tag Correct(%) = 1
+current: 296, total block: 631
+Cost = 1.26289e-05, Tag Correct(%) = 1
+current: 396, total block: 631
+Cost = 0.000113512, Tag Correct(%) = 1
+current: 496, total block: 631
+Cost = 0.00018412, Tag Correct(%) = 1
+current: 596, total block: 631
+Cost = 3.96121e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 185
+current: 65, total block: 631
+Cost = 0.000111974, Tag Correct(%) = 1
+current: 165, total block: 631
+Cost = 1.34065e-05, Tag Correct(%) = 1
+current: 265, total block: 631
+Cost = 5.9624e-05, Tag Correct(%) = 1
+current: 365, total block: 631
+Cost = 3.41649e-05, Tag Correct(%) = 1
+current: 465, total block: 631
+Cost = 1.92964e-06, Tag Correct(%) = 1
+current: 565, total block: 631
+Cost = 0.000112876, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 186
+current: 34, total block: 631
+Cost = 3.56786e-05, Tag Correct(%) = 1
+current: 134, total block: 631
+Cost = 0.000187553, Tag Correct(%) = 1
+current: 234, total block: 631
+Cost = 3.11196e-05, Tag Correct(%) = 1
+current: 334, total block: 631
+Cost = 7.24993e-06, Tag Correct(%) = 1
+current: 434, total block: 631
+Cost = 1.46856e-08, Tag Correct(%) = 1
+current: 534, total block: 631
+Cost = 0.00199422, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 187
+current: 3, total block: 631
+Cost = 0.00014157, Tag Correct(%) = 1
+current: 103, total block: 631
+Cost = 4.09296e-06, Tag Correct(%) = 1
+current: 203, total block: 631
+Cost = 8.44487e-06, Tag Correct(%) = 1
+current: 303, total block: 631
+Cost = 0.000120798, Tag Correct(%) = 1
+current: 403, total block: 631
+Cost = 1.17304e-05, Tag Correct(%) = 1
+current: 503, total block: 631
+Cost = 6.11624e-08, Tag Correct(%) = 1
+current: 603, total block: 631
+Cost = 7.37288e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 188
+current: 72, total block: 631
+Cost = 0.000312309, Tag Correct(%) = 1
+current: 172, total block: 631
+Cost = 1.5825e-06, Tag Correct(%) = 1
+current: 272, total block: 631
+Cost = 1.38524e-05, Tag Correct(%) = 1
+current: 372, total block: 631
+Cost = 1.23162e-05, Tag Correct(%) = 1
+current: 472, total block: 631
+Cost = 1.76223e-06, Tag Correct(%) = 1
+current: 572, total block: 631
+Cost = 0.000332675, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 189
+current: 41, total block: 631
+Cost = 1.02533e-07, Tag Correct(%) = 1
+current: 141, total block: 631
+Cost = 6.94041e-05, Tag Correct(%) = 1
+current: 241, total block: 631
+Cost = 8.08877e-05, Tag Correct(%) = 1
+current: 341, total block: 631
+Cost = 4.81263e-05, Tag Correct(%) = 1
+current: 441, total block: 631
+Cost = 0.00144547, Tag Correct(%) = 1
+current: 541, total block: 631
+Cost = 8.67641e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 190
+current: 10, total block: 631
+Cost = 3.50637e-05, Tag Correct(%) = 1
+current: 110, total block: 631
+Cost = 3.64341e-06, Tag Correct(%) = 1
+current: 210, total block: 631
+Cost = 6.27816e-06, Tag Correct(%) = 1
+current: 310, total block: 631
+Cost = 8.27354e-06, Tag Correct(%) = 1
+current: 410, total block: 631
+Cost = 0.000703778, Tag Correct(%) = 1
+current: 510, total block: 631
+Cost = 0.00066596, Tag Correct(%) = 1
+current: 610, total block: 631
+Cost = 1.14847e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 191
+current: 79, total block: 631
+Cost = 3.40983e-05, Tag Correct(%) = 1
+current: 179, total block: 631
+Cost = 2.17051e-06, Tag Correct(%) = 1
+current: 279, total block: 631
+Cost = 5.10367e-06, Tag Correct(%) = 1
+current: 379, total block: 631
+Cost = 0.000715408, Tag Correct(%) = 1
+current: 479, total block: 631
+Cost = 7.12898e-07, Tag Correct(%) = 1
+current: 579, total block: 631
+Cost = 0.000257362, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 192
+current: 48, total block: 631
+Cost = 0.000993375, Tag Correct(%) = 1
+current: 148, total block: 631
+Cost = 5.35152e-05, Tag Correct(%) = 1
+current: 248, total block: 631
+Cost = 0.000106337, Tag Correct(%) = 1
+current: 348, total block: 631
+Cost = 0.000218685, Tag Correct(%) = 1
+current: 448, total block: 631
+Cost = 2.5056e-05, Tag Correct(%) = 1
+current: 548, total block: 631
+Cost = 2.13044e-07, Tag Correct(%) = 1
+dev:
+Accuracy:	P=497/600=0.828333
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 193
+current: 17, total block: 631
+Cost = 1.27359e-05, Tag Correct(%) = 1
+current: 117, total block: 631
+Cost = 4.96969e-06, Tag Correct(%) = 1
+current: 217, total block: 631
+Cost = 0.000285057, Tag Correct(%) = 1
+current: 317, total block: 631
+Cost = 3.55084e-06, Tag Correct(%) = 1
+current: 417, total block: 631
+Cost = 0.000179084, Tag Correct(%) = 1
+current: 517, total block: 631
+Cost = 8.63068e-06, Tag Correct(%) = 1
+current: 617, total block: 631
+Cost = 3.91699e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 194
+current: 86, total block: 631
+Cost = 0.000312929, Tag Correct(%) = 1
+current: 186, total block: 631
+Cost = 3.09483e-05, Tag Correct(%) = 1
+current: 286, total block: 631
+Cost = 0.000418137, Tag Correct(%) = 1
+current: 386, total block: 631
+Cost = 1.38011e-06, Tag Correct(%) = 1
+current: 486, total block: 631
+Cost = 8.98567e-05, Tag Correct(%) = 1
+current: 586, total block: 631
+Cost = 0.000172495, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 195
+current: 55, total block: 631
+Cost = 1.33194e-07, Tag Correct(%) = 1
+current: 155, total block: 631
+Cost = 1.65392e-05, Tag Correct(%) = 1
+current: 255, total block: 631
+Cost = 4.98369e-05, Tag Correct(%) = 1
+current: 355, total block: 631
+Cost = 6.03977e-05, Tag Correct(%) = 1
+current: 455, total block: 631
+Cost = 0.000116448, Tag Correct(%) = 1
+current: 555, total block: 631
+Cost = 6.65425e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 196
+current: 24, total block: 631
+Cost = 6.24985e-05, Tag Correct(%) = 1
+current: 124, total block: 631
+Cost = 3.37793e-06, Tag Correct(%) = 1
+current: 224, total block: 631
+Cost = 3.48743e-05, Tag Correct(%) = 1
+current: 324, total block: 631
+Cost = 2.1882e-05, Tag Correct(%) = 1
+current: 424, total block: 631
+Cost = 0.000175078, Tag Correct(%) = 1
+current: 524, total block: 631
+Cost = 0.000107589, Tag Correct(%) = 1
+current: 624, total block: 631
+Cost = 4.23407e-05, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 197
+current: 93, total block: 631
+Cost = 4.73708e-05, Tag Correct(%) = 1
+current: 193, total block: 631
+Cost = 5.6212e-06, Tag Correct(%) = 1
+current: 293, total block: 631
+Cost = 0.000169866, Tag Correct(%) = 1
+current: 393, total block: 631
+Cost = 0.00050775, Tag Correct(%) = 1
+current: 493, total block: 631
+Cost = 6.72287e-07, Tag Correct(%) = 1
+current: 593, total block: 631
+Cost = 0.00011344, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 198
+current: 62, total block: 631
+Cost = 2.13711e-05, Tag Correct(%) = 1
+current: 162, total block: 631
+Cost = 4.37905e-05, Tag Correct(%) = 1
+current: 262, total block: 631
+Cost = 0.000211588, Tag Correct(%) = 1
+current: 362, total block: 631
+Cost = 0.000129401, Tag Correct(%) = 1
+current: 462, total block: 631
+Cost = 9.92934e-05, Tag Correct(%) = 1
+current: 562, total block: 631
+Cost = 9.35282e-08, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+##### Iteration 199
+current: 31, total block: 631
+Cost = 3.50518e-05, Tag Correct(%) = 1
+current: 131, total block: 631
+Cost = 4.12433e-05, Tag Correct(%) = 1
+current: 231, total block: 631
+Cost = 1.79549e-05, Tag Correct(%) = 1
+current: 331, total block: 631
+Cost = 1.17042e-08, Tag Correct(%) = 1
+current: 431, total block: 631
+Cost = 5.53423e-06, Tag Correct(%) = 1
+current: 531, total block: 631
+Cost = 4.21643e-05, Tag Correct(%) = 1
+current: 631, total block: 631
+Cost = 9.7763e-06, Tag Correct(%) = 1
+dev:
+Accuracy:	P=496/600=0.826667
+test:
+Accuracy:	P=68/126=0.539683
+Now exceeds best Dev performance of 0.828333. Saving model file..
+Now exceeds best Test performance of 0.539683. Saving model file..

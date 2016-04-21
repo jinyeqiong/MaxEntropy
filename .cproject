@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?fileVersion 4.0.0?><cproject storage_type_id="org.eclipse.cdt.core.XmlProjectDescriptionStorage">
+	<storageModule moduleId="org.eclipse.cdt.core.settings">
+		<cconfiguration id="cdt.managedbuild.toolchain.gnu.base.1409276167">
+			<storageModule buildSystemId="org.eclipse.cdt.managedbuilder.core.configurationDataProvider" id="cdt.managedbuild.toolchain.gnu.base.1409276167" moduleId="org.eclipse.cdt.core.settings" name="默认">
+				<externalSettings/>
+				<extensions>
+					<extension id="org.eclipse.cdt.core.GmakeErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.CWDLocator" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GCCErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GASErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.GLDErrorParser" point="org.eclipse.cdt.core.ErrorParser"/>
+					<extension id="org.eclipse.cdt.core.ELF" point="org.eclipse.cdt.core.BinaryParser"/>
+				</extensions>
+			</storageModule>
+			<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+				<configuration buildProperties="" description="" id="cdt.managedbuild.toolchain.gnu.base.1409276167" name="默认" parent="org.eclipse.cdt.build.core.emptycfg">
+					<folderInfo id="cdt.managedbuild.toolchain.gnu.base.1409276167.1089545321" name="/" resourcePath="">
+						<toolChain id="cdt.managedbuild.toolchain.gnu.base.1424860601" name="Linux GCC" superClass="cdt.managedbuild.toolchain.gnu.base">
+							<targetPlatform archList="all" binaryParser="org.eclipse.cdt.core.ELF" id="cdt.managedbuild.target.gnu.platform.base.326797742" name="调试平台" osList="linux,hpux,aix,qnx" superClass="cdt.managedbuild.target.gnu.platform.base"/>
+							<builder id="cdt.managedbuild.target.gnu.builder.base.985029256" keepEnvironmentInBuildfile="false" managedBuildOn="false" name="GNU Make 构建器" superClass="cdt.managedbuild.target.gnu.builder.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.archiver.base.1747062457" name="GCC 归档器" superClass="cdt.managedbuild.tool.gnu.archiver.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.compiler.base.27761862" name="GNU C++ 编译器" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.base">
+								<option id="gnu.cpp.compiler.option.include.paths.917742322" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+									<listOptionValue builtIn="false" value="../../LibN3L"/>
+									<listOptionValue builtIn="false" value="/opt/mshadow"/>
+								</option>
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.869662944" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.compiler.base.479769595" name="GNU C 编译器" superClass="cdt.managedbuild.tool.gnu.c.compiler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.c.compiler.input.469262549" superClass="cdt.managedbuild.tool.gnu.c.compiler.input"/>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.c.linker.base.479645381" name="GNU C 链接器" superClass="cdt.managedbuild.tool.gnu.c.linker.base"/>
+							<tool id="cdt.managedbuild.tool.gnu.cpp.linker.base.1924701756" name="GNU C++ 链接器" superClass="cdt.managedbuild.tool.gnu.cpp.linker.base">
+								<inputType id="cdt.managedbuild.tool.gnu.cpp.linker.input.275052131" superClass="cdt.managedbuild.tool.gnu.cpp.linker.input">
+									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
+									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
+								</inputType>
+							</tool>
+							<tool id="cdt.managedbuild.tool.gnu.assembler.base.239510969" name="GCC 汇编器" superClass="cdt.managedbuild.tool.gnu.assembler.base">
+								<inputType id="cdt.managedbuild.tool.gnu.assembler.input.1424163899" superClass="cdt.managedbuild.tool.gnu.assembler.input"/>
+							</tool>
+						</toolChain>
+					</folderInfo>
+				</configuration>
+			</storageModule>
+			<storageModule moduleId="org.eclipse.cdt.core.externalSettings"/>
+		</cconfiguration>
+	</storageModule>
+	<storageModule moduleId="cdtBuildSystem" version="4.0.0">
+		<project id="MaxEntSentiment_ErrorWords.null.897814736" name="MaxEntSentiment_ErrorWords"/>
+	</storageModule>
+	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="scannerConfiguration">
+		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.1409276167;cdt.managedbuild.toolchain.gnu.base.1409276167.1089545321;cdt.managedbuild.tool.gnu.cpp.compiler.base.27761862;cdt.managedbuild.tool.gnu.cpp.compiler.input.869662944">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.2047474884;cdt.managedbuild.toolchain.gnu.base.2047474884.1948254008;cdt.managedbuild.tool.gnu.cpp.compiler.base.1815921664;cdt.managedbuild.tool.gnu.cpp.compiler.input.1809931986">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.23034446;cdt.managedbuild.toolchain.gnu.base.23034446.1964422795;cdt.managedbuild.tool.gnu.c.compiler.base.2089957715;cdt.managedbuild.tool.gnu.c.compiler.input.2063423238">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.23034446;cdt.managedbuild.toolchain.gnu.base.23034446.1964422795;cdt.managedbuild.tool.gnu.cpp.compiler.base.400403329;cdt.managedbuild.tool.gnu.cpp.compiler.input.303681869">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.958172447;cdt.managedbuild.toolchain.gnu.base.958172447.801111154;cdt.managedbuild.tool.gnu.cpp.compiler.base.243472453;cdt.managedbuild.tool.gnu.cpp.compiler.input.13755865">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.2047474884;cdt.managedbuild.toolchain.gnu.base.2047474884.1948254008;cdt.managedbuild.tool.gnu.c.compiler.base.415618799;cdt.managedbuild.tool.gnu.c.compiler.input.1884944571">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.1621610260;cdt.managedbuild.toolchain.gnu.base.1621610260.1770197782;cdt.managedbuild.tool.gnu.c.compiler.base.904025064;cdt.managedbuild.tool.gnu.c.compiler.input.1946082608">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.1409276167;cdt.managedbuild.toolchain.gnu.base.1409276167.1089545321;cdt.managedbuild.tool.gnu.c.compiler.base.479769595;cdt.managedbuild.tool.gnu.c.compiler.input.469262549">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.958172447;cdt.managedbuild.toolchain.gnu.base.958172447.801111154;cdt.managedbuild.tool.gnu.c.compiler.base.1441417906;cdt.managedbuild.tool.gnu.c.compiler.input.2115071299">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.1621610260;cdt.managedbuild.toolchain.gnu.base.1621610260.1770197782;cdt.managedbuild.tool.gnu.cpp.compiler.base.1546822807;cdt.managedbuild.tool.gnu.cpp.compiler.input.1680260367">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.960077660;cdt.managedbuild.toolchain.gnu.base.960077660.736539787;cdt.managedbuild.tool.gnu.cpp.compiler.base.1393051060;cdt.managedbuild.tool.gnu.cpp.compiler.input.1694738064">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+		<scannerConfigBuildInfo instanceId="cdt.managedbuild.toolchain.gnu.base.960077660;cdt.managedbuild.toolchain.gnu.base.960077660.736539787;cdt.managedbuild.tool.gnu.c.compiler.base.1949138244;cdt.managedbuild.tool.gnu.c.compiler.input.426481024">
+			<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
+		</scannerConfigBuildInfo>
+	</storageModule>
+</cproject>
